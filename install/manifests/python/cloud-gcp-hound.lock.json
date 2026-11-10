@@ -1,0 +1,873 @@
+{
+  "direct_requirement_file": "cloud/GCP-Hound/requirements.txt",
+  "distribution_count": 55,
+  "environment_id": "cloud-gcp-hound",
+  "level_explanation": "Installed name/version snapshot only. Dependency resolution, wheel hashes, indexes and markers are not fully locked.",
+  "location": "cloud/GCP-Hound/.venv",
+  "manager": "venv",
+  "package_list_canonicalization": "lowercase name, replace _ and . with -, append ==version and newline; sort by lowercase name then version; duplicates preserved",
+  "package_list_sha256": "380cbc61b253b8d22f842b6279e27949ca80e979f37f129b5319cd613a5903e0",
+  "packages": [
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "aiohappyeyeballs",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.7.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "aiohttp",
+      "requires_names": [
+        "aiodns",
+        "aiohappyeyeballs",
+        "aiosignal",
+        "async-timeout",
+        "attrs",
+        "backports-zstd",
+        "brotli",
+        "brotlicffi",
+        "frozenlist",
+        "multidict",
+        "propcache",
+        "typing-extensions",
+        "yarl"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.14.5"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "aiohttp-retry",
+      "requires_names": [
+        "aiohttp"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.9.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "aiosignal",
+      "requires_names": [
+        "frozenlist",
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.4.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "annotated-types",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.8.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "attrs",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "26.1.0"
+    },
+    {
+      "cli_entry_points": [
+        "bhopengraph"
+      ],
+      "dependency_role": "direct",
+      "name": "bhopengraph",
+      "requires_names": [],
+      "role_evidence": "source requirements.txt",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.3.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "certifi",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2026.10.23"
+    },
+    {
+      "cli_entry_points": [
+        "cffi-gen-src"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "cffi",
+      "requires_names": [
+        "pycparser"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.1.1"
+    },
+    {
+      "cli_entry_points": [
+        "normalizer"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "charset-normalizer",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.5.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "cryptography",
+      "requires_names": [
+        "bcrypt",
+        "cffi",
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "50.0.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "durationpy",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.11"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "frozenlist",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.8.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "google-api-core",
+      "requires_names": [
+        "aiohttp",
+        "google-auth",
+        "googleapis-common-protos",
+        "grpcio",
+        "grpcio-status",
+        "opentelemetry-api",
+        "opentelemetry-instrumentation-grpc",
+        "opentelemetry-sdk",
+        "proto-plus",
+        "protobuf",
+        "requests"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.44.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "google-api-python-client",
+      "requires_names": [
+        "google-api-core",
+        "google-auth",
+        "google-auth-httplib2",
+        "httplib2",
+        "uritemplate"
+      ],
+      "role_evidence": "source requirements.txt",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.201.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "google-auth",
+      "requires_names": [
+        "aiohttp",
+        "aioresponses",
+        "cryptography",
+        "flask",
+        "freezegun",
+        "grpcio",
+        "packaging",
+        "pyasn1-modules",
+        "pyjwt",
+        "pytest",
+        "pytest-asyncio",
+        "pytest-cov",
+        "pytest-localserver",
+        "pyu2f",
+        "requests",
+        "responses",
+        "urllib3"
+      ],
+      "role_evidence": "source requirements.txt",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.62.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "google-auth-httplib2",
+      "requires_names": [
+        "google-auth",
+        "httplib2"
+      ],
+      "role_evidence": "source requirements.txt",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.4.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "google-cloud-bigquery",
+      "requires_names": [
+        "bigquery-magics",
+        "db-dtypes",
+        "geopandas",
+        "google-api-core",
+        "google-auth",
+        "google-cloud-bigquery",
+        "google-cloud-bigquery-storage",
+        "google-cloud-core",
+        "google-resumable-media",
+        "grpcio",
+        "ipykernel",
+        "ipython",
+        "ipywidgets",
+        "matplotlib",
+        "opentelemetry-api",
+        "opentelemetry-instrumentation",
+        "opentelemetry-sdk",
+        "packaging",
+        "pandas",
+        "pandas-gbq",
+        "proto-plus",
+        "protobuf",
+        "pyarrow",
+        "python-dateutil",
+        "requests",
+        "shapely",
+        "tqdm"
+      ],
+      "role_evidence": "source requirements.txt",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.47.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "google-cloud-core",
+      "requires_names": [
+        "google-api-core",
+        "google-auth",
+        "grpcio",
+        "grpcio-status"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.8.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "google-cloud-secret-manager",
+      "requires_names": [
+        "google-api-core",
+        "google-auth",
+        "grpc-google-iam-v1",
+        "grpcio",
+        "proto-plus",
+        "protobuf"
+      ],
+      "role_evidence": "source requirements.txt",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.32.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "google-cloud-storage",
+      "requires_names": [
+        "black",
+        "brotli",
+        "coverage",
+        "flake8",
+        "google-api-core",
+        "google-auth",
+        "google-cloud-core",
+        "google-cloud-iam",
+        "google-cloud-kms",
+        "google-cloud-pubsub",
+        "google-cloud-testutils",
+        "google-crc32c",
+        "google-resumable-media",
+        "grpc-google-iam-v1",
+        "grpcio",
+        "grpcio-status",
+        "mock",
+        "numpy",
+        "opentelemetry-api",
+        "opentelemetry-sdk",
+        "proto-plus",
+        "protobuf",
+        "psutil",
+        "py-cpuinfo",
+        "pyopenssl",
+        "pytest",
+        "pytest-asyncio",
+        "pytest-benchmark",
+        "pytest-cov",
+        "pytest-rerunfailures",
+        "pytest-xdist",
+        "pyyaml",
+        "requests"
+      ],
+      "role_evidence": "source requirements.txt",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.17.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "google-crc32c",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.9.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "google-resumable-media",
+      "requires_names": [
+        "aiohttp",
+        "google-auth",
+        "google-crc32c",
+        "requests"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.11.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "googleapis-common-protos",
+      "requires_names": [
+        "grpcio",
+        "protobuf"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.76.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "grpc-google-iam-v1",
+      "requires_names": [
+        "googleapis-common-protos",
+        "grpcio",
+        "protobuf"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.14.6"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "grpcio",
+      "requires_names": [
+        "grpcio-tools",
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.85.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "grpcio-status",
+      "requires_names": [
+        "googleapis-common-protos",
+        "grpcio",
+        "protobuf"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.85.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "httplib2",
+      "requires_names": [
+        "pyparsing"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.32.1"
+    },
+    {
+      "cli_entry_points": [
+        "idna"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "idna",
+      "requires_names": [
+        "coverage",
+        "hypothesis",
+        "mypy",
+        "pytest",
+        "ruff",
+        "ty"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.20"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "kubernetes",
+      "requires_names": [
+        "aiohttp",
+        "aiohttp-retry",
+        "certifi",
+        "durationpy",
+        "google-auth",
+        "pydantic",
+        "python-dateutil",
+        "pyyaml",
+        "requests",
+        "requests-oauthlib",
+        "typing-extensions",
+        "urllib3",
+        "websocket-client"
+      ],
+      "role_evidence": "source requirements.txt",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "37.0.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "multidict",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "7.2.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "oauthlib",
+      "requires_names": [
+        "blinker",
+        "cryptography",
+        "pyjwt"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.0.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "opentelemetry-api",
+      "requires_names": [
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.45.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "packaging",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "26.3"
+    },
+    {
+      "cli_entry_points": [
+        "pip",
+        "pip3"
+      ],
+      "dependency_role": "direct",
+      "name": "pip",
+      "requires_names": [],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "25.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "propcache",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.5.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "proto-plus",
+      "requires_names": [
+        "google-api-core",
+        "protobuf"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.29.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "protobuf",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "7.36.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyasn1",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.6.5"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyasn1_modules",
+      "requires_names": [
+        "pyasn1"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.4.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pycparser",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.12"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pydantic",
+      "requires_names": [
+        "annotated-types",
+        "email-validator",
+        "pydantic-core",
+        "typing-extensions",
+        "typing-inspection",
+        "tzdata"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.14.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pydantic_core",
+      "requires_names": [
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.50.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyparsing",
+      "requires_names": [
+        "jinja2",
+        "railroad-diagrams"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.3.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "python-dateutil",
+      "requires_names": [
+        "six"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.9.0.post0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "PyYAML",
+      "requires_names": [],
+      "role_evidence": "source requirements.txt",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "6.0.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "requests",
+      "requires_names": [
+        "certifi",
+        "chardet",
+        "charset-normalizer",
+        "idna",
+        "pysocks",
+        "urllib3"
+      ],
+      "role_evidence": "source requirements.txt",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.34.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "requests-oauthlib",
+      "requires_names": [
+        "oauthlib",
+        "requests"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.0.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "six",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.17.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "typing-inspection",
+      "requires_names": [
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.4.5"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "typing_extensions",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.16.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "uritemplate",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.2.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "urllib3",
+      "requires_names": [
+        "backports-zstd",
+        "brotli",
+        "brotlicffi",
+        "h2",
+        "pysocks"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.8.0"
+    },
+    {
+      "cli_entry_points": [
+        "wsdump"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "websocket-client",
+      "requires_names": [
+        "myst-parser",
+        "pytest",
+        "python-socks",
+        "sphinx",
+        "sphinx-rtd-theme",
+        "websockets",
+        "wsaccel"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.9.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "yarl",
+      "requires_names": [
+        "idna",
+        "multidict",
+        "propcache"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.25.1"
+    }
+  ],
+  "purpose": "GCP-Hound source and requirements",
+  "python": {
+    "architecture": "arm64",
+    "implementation": "cpython",
+    "version": "3.13.7"
+  },
+  "reproducibility_level": 2,
+  "schema_version": 1
+}

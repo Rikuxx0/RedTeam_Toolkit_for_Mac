@@ -1,0 +1,12 @@
+name: redteam-empire
+services:
+  empire:
+    image: ${EMPIRE_IMAGE:-bcsecurity/empire:v7.0.2}
+    platform: linux/arm64
+    restart: "no"
+    ports:
+      - "127.0.0.1:${EMPIRE_API_PORT:-1337}:1337"
+    volumes:
+      - empire-data:/empire/empire/server/data
+volumes:
+  empire-data:

@@ -1,0 +1,110 @@
+schema_version: 1
+observed_at: '2026-11-10'
+meaning: Read-only installed-environment snapshots; not resolved or artifact-verified
+  locks
+python_3_15_2_available_in_homebrew_but_not_used_by_these_environments: true
+environments:
+- id: project-shared
+  purpose: Shared project venv
+  manager: venv
+  location: .venv
+  python_version: 3.13.7
+  architecture: arm64
+  distribution_count: 215
+  direct_count: 39
+  transitive_candidate_count: 176
+  unknown_role_count: 0
+  reproducibility_level: 2
+  lock_file: manifests/python/project-shared.lock.json
+  lock_sha256: 9a76a3e4b5625a712b3a65a9398c427a8bc2c02673a69f4119476d7c60ce248d
+- id: cloud-graphpython
+  purpose: Graphpython source and requirements
+  manager: venv
+  location: cloud/Graphpython/.venv
+  python_version: 3.13.7
+  architecture: arm64
+  distribution_count: 20
+  direct_count: 11
+  transitive_candidate_count: 9
+  unknown_role_count: 0
+  reproducibility_level: 2
+  lock_file: manifests/python/cloud-graphpython.lock.json
+  lock_sha256: c63403a4127665e2ed4ac56db93d99c79ddd7471d6de5cf73df027a8b535b6be
+- id: cloud-gcp-hound
+  purpose: GCP-Hound source and requirements
+  manager: venv
+  location: cloud/GCP-Hound/.venv
+  python_version: 3.13.7
+  architecture: arm64
+  distribution_count: 55
+  direct_count: 11
+  transitive_candidate_count: 44
+  unknown_role_count: 0
+  reproducibility_level: 2
+  lock_file: manifests/python/cloud-gcp-hound.lock.json
+  lock_sha256: 82a38e8be5f8e647d12089bc5d4b22dc3ecaafff53f940e5c336ebc68c819c2e
+- id: uv-bloodhound-ce
+  purpose: BloodHound CE Python CLI
+  manager: uv-tool
+  location: uv-tool:bloodhound-ce
+  python_version: 3.11.14
+  architecture: arm64
+  distribution_count: 23
+  direct_count: 1
+  transitive_candidate_count: 22
+  unknown_role_count: 0
+  reproducibility_level: 2
+  lock_file: manifests/python/uv-bloodhound-ce.lock.json
+  lock_sha256: 667e3be05c30ad5b2b50aad49c8da97be06e963688dad24e08c9c36e8382451d
+- id: uv-netexec
+  purpose: NetExec CLI with local patch
+  manager: uv-tool
+  location: uv-tool:netexec
+  python_version: 3.12.12
+  architecture: arm64
+  distribution_count: 89
+  direct_count: 2
+  transitive_candidate_count: 87
+  unknown_role_count: 0
+  reproducibility_level: 2
+  lock_file: manifests/python/uv-netexec.lock.json
+  lock_sha256: 8a96a24194ef6719041bda3ec72a6e4d743d9b3f5827409ce7f1542ae7a09ab2
+- id: uv-principalmapper
+  purpose: Principal Mapper CLI
+  manager: uv-tool
+  location: uv-tool:principalmapper
+  python_version: 3.9.6
+  architecture: arm64
+  distribution_count: 9
+  direct_count: 1
+  transitive_candidate_count: 8
+  unknown_role_count: 0
+  reproducibility_level: 2
+  lock_file: manifests/python/uv-principalmapper.lock.json
+  lock_sha256: a59bb751fea5aad28f18915c3154557b405f6dc9cddd409aad464086bb7d9ad6
+- id: uv-roadrecon
+  purpose: ROADrecon CLI
+  manager: uv-tool
+  location: uv-tool:roadrecon
+  python_version: 3.11.14
+  architecture: arm64
+  distribution_count: 37
+  direct_count: 1
+  transitive_candidate_count: 36
+  unknown_role_count: 0
+  reproducibility_level: 2
+  lock_file: manifests/python/uv-roadrecon.lock.json
+  lock_sha256: 44c1d5f9b0f6ba67aad2abc5fa2ea1e6279500287e1b12164c723cf8136a353d
+- id: uv-roadtx
+  purpose: ROADtx CLI
+  manager: uv-tool
+  location: uv-tool:roadtx
+  python_version: 3.11.14
+  architecture: arm64
+  distribution_count: 42
+  direct_count: 1
+  transitive_candidate_count: 41
+  unknown_role_count: 0
+  reproducibility_level: 2
+  lock_file: manifests/python/uv-roadtx.lock.json
+  lock_sha256: b97c42f4eb454309e0a3a2879086e077ee34343b2f27fde11c419fe18c5aa895

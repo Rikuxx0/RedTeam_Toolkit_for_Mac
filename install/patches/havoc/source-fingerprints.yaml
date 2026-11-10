@@ -1,0 +1,39 @@
+schema_version: 1
+observed_at: '2026-11-10'
+source_revision: unknown
+git_metadata_present_in_havoc_or_submodules: false
+tree_hash_algorithm: 'SHA-256 over lexicographically sorted regular files, excluding paths with a .git component; for each file append 4-byte big-endian relative UTF-8 path length, path bytes, 8-byte big-endian content length, content bytes'
+snapshots:
+  - source: c2/Havoc/client/CMakeLists.txt
+    copy: patches/havoc/snapshots/client/CMakeLists.txt
+    sha256: 2db118a8bd0e215e30bfe11ec46b4c6913f57d9ab4dfb40a777eaa9b3c9f0d87
+  - source: c2/Havoc/client/external/toml/toml/exception.hpp
+    copy: patches/havoc/snapshots/client/external/toml/toml/exception.hpp
+    sha256: f28dd0ee8338c7ca11d48a0ec67cf595d0b7f12b0d6165eb6bf00ed3c85cecae
+  - source: c2/Havoc/client/external/toml/toml/serializer.hpp
+    copy: patches/havoc/snapshots/client/external/toml/toml/serializer.hpp
+    sha256: 0c57bfadc8e20d29483ed7b4b8466e26a978cf39ae2dc4cff1a52cddefcf067d
+submodule_content:
+  - name: json
+    configured_url: https://github.com/nlohmann/json
+    revision: unknown
+    file_count: 1082
+    total_bytes: 13942051
+    tree_sha256: 3c101586b15f9905d4823f1a838c9add900b879d2f4df05529fb2cd990ea471f
+  - name: spdlog
+    configured_url: https://github.com/gabime/spdlog
+    revision: unknown
+    file_count: 171
+    total_bytes: 1125330
+    tree_sha256: 8293b1208e14171d6fb8cd6ba3add187dae4da3df0b668d147e020e52e7f0035
+  - name: toml
+    configured_url: https://github.com/ToruNiina/toml11
+    revision: unknown
+    file_count: 79
+    total_bytes: 899318
+    tree_sha256: fae09307d9a267b6fb21b500e7a1142f1a3106e4f5d680897b726823150b74bb
+additional_file_hashes:
+  teamserver_go_mod: 01ba1e20bf47a03e9b221259d4f162050732416105ac1bbb36150d5cba19fa13
+  teamserver_go_sum: 2e5c4714f75285a791f71a691cbc74b8ea05b3465f6db4b2e189721630d213fe
+  profile_sha256: 2158cf10d47d62a3326ffb2f1752a0bffcaeb223baa68c695661c052252cd401
+  client_cmake_cache_sha256: fc43ac26395ecf26a7f887c0b2813efea1bacd031f5fc90fff10802817042a38

@@ -1,0 +1,12 @@
+diff --git a/nxc/cli.py b/nxc/cli.py
+--- a/nxc/cli.py
++++ b/nxc/cli.py
+@@ -127,7 +127,7 @@
+ 
+     if args.version:
+         print(f"{VERSION} - {CODENAME} - {COMMIT} - {DISTANCE}")
+-        sys.exit(1)
++        sys.exit(0)
+ 
+     # Multiply output_tries by 10 to enable more fine granural control, see exec methods
+     if hasattr(args, "get_output_tries"):

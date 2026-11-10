@@ -1,0 +1,69 @@
+schema_version: 1
+observed_at: '2026-11-10'
+tools:
+- id: uv-bloodhound-ce
+  tool: bloodhound-ce
+  python_version: 3.11.14
+  python_constraint: '3.11'
+  direct_requirements:
+  - name: bloodhound-ce
+    specifier: not pinned
+    source_kind: index-unknown
+  cli_entry_points:
+  - bloodhound-ce-python
+  lock_file: manifests/python/uv-bloodhound-ce.lock.json
+- id: uv-netexec
+  tool: netexec
+  python_version: 3.12.12
+  python_constraint: not recorded
+  direct_requirements:
+  - name: netexec
+    specifier: not pinned
+    source_kind: vcs
+    vcs_url: https://github.com/Pennyw0rth/NetExec.git
+    vcs_commit: c7dc286ba65daf10402cdc470e531b84e6d3d911
+    requested_revision: v1.5.1
+    local_patch: patches/netexec/version-exit-code.patch
+  - name: dploot
+    specifier: ==3.2.2
+    source_kind: index-unknown
+  cli_entry_points:
+  - NetExec
+  - netexec
+  - nxc
+  - nxcdb
+  lock_file: manifests/python/uv-netexec.lock.json
+- id: uv-principalmapper
+  tool: principalmapper
+  python_version: 3.9.6
+  python_constraint: '3.9'
+  direct_requirements:
+  - name: principalmapper
+    specifier: not pinned
+    source_kind: index-unknown
+  cli_entry_points:
+  - pmapper
+  lock_file: manifests/python/uv-principalmapper.lock.json
+- id: uv-roadrecon
+  tool: roadrecon
+  python_version: 3.11.14
+  python_constraint: '3.11'
+  direct_requirements:
+  - name: roadrecon
+    specifier: not pinned
+    source_kind: index-unknown
+  cli_entry_points:
+  - roadrecon
+  - roadrecon-gui
+  lock_file: manifests/python/uv-roadrecon.lock.json
+- id: uv-roadtx
+  tool: roadtx
+  python_version: 3.11.14
+  python_constraint: '3.11'
+  direct_requirements:
+  - name: roadtx
+    specifier: not pinned
+    source_kind: index-unknown
+  cli_entry_points:
+  - roadtx
+  lock_file: manifests/python/uv-roadtx.lock.json

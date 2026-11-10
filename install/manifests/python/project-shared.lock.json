@@ -1,0 +1,3649 @@
+{
+  "direct_requirement_file": "unknown-or-uv-receipt",
+  "distribution_count": 215,
+  "environment_id": "project-shared",
+  "level_explanation": "Installed name/version snapshot only. Dependency resolution, wheel hashes, indexes and markers are not fully locked.",
+  "location": ".venv",
+  "manager": "venv",
+  "package_list_canonicalization": "lowercase name, replace _ and . with -, append ==version and newline; sort by lowercase name then version; duplicates preserved",
+  "package_list_sha256": "70391fb95e6341381f381c7ee1964585555801bf3584840311bc76e9cdcb9e9c",
+  "packages": [
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "a2wsgi",
+      "requires_names": [
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.10.10"
+    },
+    {
+      "cli_entry_points": [
+        "antdsparse"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "aesedb",
+      "requires_names": [
+        "aiowinreg",
+        "colorama",
+        "tqdm",
+        "unicrypto"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.1.8"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "aiodns",
+      "requires_names": [
+        "pycares"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.0.4"
+    },
+    {
+      "cli_entry_points": [
+        "asmbcertreq",
+        "asmbclient",
+        "asmbgetfile",
+        "asmbscanner",
+        "asmbshareenum"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "aiosmb",
+      "requires_names": [
+        "asn1crypto",
+        "asyauth",
+        "asysocks",
+        "colorama",
+        "cryptography",
+        "prompt-toolkit",
+        "six",
+        "tqdm",
+        "unicrypto",
+        "wcwidth",
+        "winacl"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.4.14"
+    },
+    {
+      "cli_entry_points": [
+        "awinreg"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "aiowinreg",
+      "requires_names": [
+        "prompt-toolkit",
+        "winacl"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.0.13"
+    },
+    {
+      "cli_entry_points": [
+        "angr",
+        "angr-mcp"
+      ],
+      "dependency_role": "direct",
+      "name": "angr",
+      "requires_names": [
+        "angr-data",
+        "archinfo",
+        "cachetools",
+        "capstone",
+        "cffi",
+        "cle",
+        "colorama",
+        "cxxheaderparser",
+        "fastmcp",
+        "gitpython",
+        "keystone-engine",
+        "lmdb",
+        "mcp",
+        "msgspec",
+        "mulpyplexer",
+        "networkx",
+        "opentelemetry-api",
+        "platformdirs",
+        "protobuf",
+        "psutil",
+        "pycparser",
+        "pydantic-ai",
+        "pydemumble",
+        "pypcode",
+        "pyvex",
+        "rich",
+        "sortedcontainers",
+        "sqlalchemy",
+        "sympy",
+        "typing-extensions",
+        "unicorn",
+        "z3-solver"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "10.0.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "angr-data",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.1.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "annotated-doc",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.0.5"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "annotated-types",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.8.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "anyio",
+      "requires_names": [
+        "exceptiongroup",
+        "idna",
+        "trio",
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.15.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "apispec",
+      "requires_names": [
+        "apispec",
+        "marshmallow",
+        "openapi-spec-validator",
+        "packaging",
+        "pre-commit",
+        "pytest",
+        "pyyaml",
+        "sphinx",
+        "sphinx-issues",
+        "sphinx-rtd-theme",
+        "tox"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "6.10.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "archinfo",
+      "requires_names": [
+        "pypcode"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "10.0.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "arpy",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.1.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "asn1crypto",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.5.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "asyauth",
+      "requires_names": [
+        "asn1crypto",
+        "asysocks",
+        "minikerberos",
+        "unicrypto"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.0.23"
+    },
+    {
+      "cli_entry_points": [
+        "asysocks-brute",
+        "asysocks-fileserver",
+        "asysocks-portscan",
+        "asysocks-proxy",
+        "asysocks-sec",
+        "asysocks-tunnel",
+        "asysocks-webdav"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "asysocks",
+      "requires_names": [
+        "asn1crypto",
+        "cryptography",
+        "h11"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.2.18"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "Authlib",
+      "requires_names": [
+        "cryptography",
+        "joserfc"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.8.0"
+    },
+    {
+      "cli_entry_points": [
+        "bandit",
+        "bandit-baseline",
+        "bandit-config-generator"
+      ],
+      "dependency_role": "direct",
+      "name": "bandit",
+      "requires_names": [
+        "beautifulsoup4",
+        "colorama",
+        "coverage",
+        "fixtures",
+        "flake8",
+        "gitpython",
+        "jschema-to-python",
+        "pylint",
+        "pyyaml",
+        "rich",
+        "sarif-om",
+        "stestr",
+        "stevedore",
+        "testscenarios",
+        "testtools",
+        "tomli"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.9.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "bcrypt",
+      "requires_names": [
+        "mypy",
+        "pytest"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "5.0.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "beautifulsoup4",
+      "requires_names": [
+        "cchardet",
+        "chardet",
+        "charset-normalizer",
+        "html5lib",
+        "lxml",
+        "soupsieve",
+        "typing-extensions"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.14.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "bitarray",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.11.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "bitstring",
+      "requires_names": [
+        "bitarray",
+        "tibs"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.4.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "blinker",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.9.0"
+    },
+    {
+      "cli_entry_points": [
+        "bloodhound-python"
+      ],
+      "dependency_role": "direct",
+      "name": "bloodhound",
+      "requires_names": [
+        "dnspython",
+        "impacket",
+        "ldap3",
+        "pyasn1",
+        "pycryptodome"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.9.0"
+    },
+    {
+      "cli_entry_points": [
+        "bloodhound-ce-python"
+      ],
+      "dependency_role": "direct",
+      "name": "bloodhound-ce",
+      "requires_names": [
+        "dnspython",
+        "impacket",
+        "ldap3",
+        "pyasn1",
+        "pycryptodome"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.9.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "cachetools",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "7.2.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "capstone",
+      "requires_names": [
+        "importlib-resources"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "5.0.9"
+    },
+    {
+      "cli_entry_points": [
+        "cart"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "cart",
+      "requires_names": [
+        "pycryptodome"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.2.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "cement",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.6.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "certifi",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2026.7.22"
+    },
+    {
+      "cli_entry_points": [
+        "certipy"
+      ],
+      "dependency_role": "direct",
+      "name": "certipy",
+      "requires_names": [
+        "build",
+        "bump-my-version",
+        "cryptography",
+        "flask",
+        "pre-commit",
+        "pytest",
+        "ruff"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.2.3"
+    },
+    {
+      "cli_entry_points": [
+        "cffi-gen-src"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "cffi",
+      "requires_names": [
+        "pycparser"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.1.1"
+    },
+    {
+      "cli_entry_points": [
+        "chardetect"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "chardet",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "7.6.0"
+    },
+    {
+      "cli_entry_points": [
+        "normalizer"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "charset-normalizer",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.5.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "cle",
+      "requires_names": [
+        "archinfo",
+        "arpy",
+        "cart",
+        "minidump",
+        "pefile",
+        "pyelftools",
+        "pypcode",
+        "pyvex",
+        "pyxbe",
+        "pyxdia",
+        "sortedcontainers",
+        "uefi-firmware"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "10.0.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "click",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "8.5.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "cloudpickle",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.1.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "colorama",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.4.6"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "colorclass",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.2.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "configparser",
+      "requires_names": [
+        "furo",
+        "jaraco-packaging",
+        "jaraco-tidelift",
+        "pytest",
+        "pytest-checkdocs",
+        "pytest-cov",
+        "pytest-enabler",
+        "pytest-mypy",
+        "pytest-ruff",
+        "rst-linker",
+        "sphinx",
+        "sphinx-lint",
+        "types-backports"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "7.2.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "cryptography",
+      "requires_names": [
+        "bcrypt",
+        "cffi",
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "50.0.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "cxxheaderparser",
+      "requires_names": [
+        "dataclasses",
+        "pcpp"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.0.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "defusedcsv",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.0.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "defusedxml",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.7.1"
+    },
+    {
+      "cli_entry_points": [
+        "dirsearch",
+        "dirsearch-build-native"
+      ],
+      "dependency_role": "direct",
+      "name": "dirsearch",
+      "requires_names": [
+        "beautifulsoup4",
+        "colorama",
+        "defusedcsv",
+        "defusedxml",
+        "httpx",
+        "httpx-ntlm",
+        "jinja2",
+        "mysql-connector-python",
+        "psycopg",
+        "pyopenssl",
+        "pysocks",
+        "requests",
+        "requests-ntlm",
+        "requests-toolbelt"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.5.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "dnspython",
+      "requires_names": [
+        "aioquic",
+        "black",
+        "coverage",
+        "cryptography",
+        "h2",
+        "httpcore2",
+        "httpx2",
+        "hypercorn",
+        "idna",
+        "pyright",
+        "pytest",
+        "pytest-cov",
+        "quart-trio",
+        "ruff",
+        "sphinx",
+        "sphinx-rtd-theme",
+        "trio",
+        "trustme",
+        "ty",
+        "wmi"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.9.0"
+    },
+    {
+      "cli_entry_points": [
+        "dnsrecon"
+      ],
+      "dependency_role": "direct",
+      "name": "dnsrecon",
+      "requires_names": [
+        "dnspython",
+        "lxml",
+        "netaddr"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.10.1"
+    },
+    {
+      "cli_entry_points": [
+        "dnstwist"
+      ],
+      "dependency_role": "direct",
+      "name": "dnstwist",
+      "requires_names": [
+        "dnspython",
+        "geoip2",
+        "idna",
+        "ppdeep",
+        "py-tlsh",
+        "tld"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "20250130"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "docopt-ng",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.9.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "dparse",
+      "requires_names": [
+        "packaging",
+        "pipenv",
+        "poetry",
+        "pyyaml",
+        "tomli"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.6.4"
+    },
+    {
+      "cli_entry_points": [
+        "dploot"
+      ],
+      "dependency_role": "direct",
+      "name": "dploot",
+      "requires_names": [
+        "cryptography",
+        "impacket",
+        "lxml",
+        "pick",
+        "pyasn1",
+        "pypsrp"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.1.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "droopescan",
+      "requires_names": [
+        "cement",
+        "futures",
+        "pystache",
+        "requests"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.45.1"
+    },
+    {
+      "cli_entry_points": [
+        "dulwich"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "dulwich",
+      "requires_names": [
+        "aiohttp",
+        "atheris",
+        "codespell",
+        "dissolve",
+        "fastimport",
+        "gpg",
+        "hypothesis",
+        "merge3",
+        "munkres",
+        "mypy",
+        "paramiko",
+        "patiencediff",
+        "rich",
+        "ruff",
+        "typing-extensions",
+        "urllib3"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.2.15"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "easygui",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.98.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "empire",
+      "requires_names": [
+        "pager",
+        "pyaml",
+        "python-dateutil",
+        "requests"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.3.4"
+    },
+    {
+      "cli_entry_points": [
+        "fierce"
+      ],
+      "dependency_role": "direct",
+      "name": "fierce",
+      "requires_names": [
+        "dnspython"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.6.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "filelock",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.32.7"
+    },
+    {
+      "cli_entry_points": [
+        "flask"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "Flask",
+      "requires_names": [
+        "asgiref",
+        "blinker",
+        "click",
+        "importlib-metadata",
+        "itsdangerous",
+        "jinja2",
+        "markupsafe",
+        "python-dotenv",
+        "werkzeug"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.1.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "frida",
+      "requires_names": [
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "17.18.0"
+    },
+    {
+      "cli_entry_points": [
+        "frida",
+        "frida-apk",
+        "frida-compile",
+        "frida-create",
+        "frida-discover",
+        "frida-itrace",
+        "frida-join",
+        "frida-kill",
+        "frida-ls",
+        "frida-ls-devices",
+        "frida-pm",
+        "frida-ps",
+        "frida-pull",
+        "frida-push",
+        "frida-rm",
+        "frida-strace",
+        "frida-trace"
+      ],
+      "dependency_role": "direct",
+      "name": "frida-tools",
+      "requires_names": [
+        "colorama",
+        "frida",
+        "prompt-toolkit",
+        "pygments",
+        "websockets"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "14.10.4"
+    },
+    {
+      "cli_entry_points": [
+        "futurize",
+        "pasteurize"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "future",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.0.0"
+    },
+    {
+      "cli_entry_points": [
+        "gcp-scanner",
+        "gcp-scanner-visualizer"
+      ],
+      "dependency_role": "direct",
+      "name": "gcp-scanner",
+      "requires_names": [
+        "google-api-python-client",
+        "google-cloud-container",
+        "google-cloud-iam",
+        "httplib2",
+        "pyu2f",
+        "requests"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "local-path-redacted"
+      },
+      "version": "1.4.0.post9+git.9725f0e9"
+    },
+    {
+      "cli_entry_points": [
+        "git-dumper"
+      ],
+      "dependency_role": "direct",
+      "name": "git-dumper",
+      "requires_names": [
+        "beautifulsoup4",
+        "dulwich",
+        "pysocks",
+        "requests",
+        "requests-pkcs12"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.0.9"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "gitdb",
+      "requires_names": [
+        "smmap"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.0.12"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "gitdb2",
+      "requires_names": [
+        "gitdb"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.0.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "GitPython",
+      "requires_names": [
+        "gitdb2"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.0.6"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "google-api-core",
+      "requires_names": [
+        "google-auth",
+        "googleapis-common-protos",
+        "grpcio",
+        "grpcio-status",
+        "proto-plus",
+        "protobuf",
+        "requests"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.30.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "google-api-python-client",
+      "requires_names": [
+        "google-api-core",
+        "google-auth",
+        "google-auth-httplib2",
+        "httplib2",
+        "uritemplate"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.80.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "google-auth",
+      "requires_names": [
+        "aiohttp",
+        "aioresponses",
+        "cryptography",
+        "flask",
+        "freezegun",
+        "grpcio",
+        "packaging",
+        "pyasn1-modules",
+        "pyjwt",
+        "pytest",
+        "pytest-asyncio",
+        "pytest-cov",
+        "pytest-localserver",
+        "pyu2f",
+        "requests",
+        "responses",
+        "urllib3"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.62.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "google-auth-httplib2",
+      "requires_names": [
+        "google-auth",
+        "httplib2"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.4.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "google-cloud-container",
+      "requires_names": [
+        "google-api-core",
+        "proto-plus",
+        "protobuf"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.17.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "google-cloud-iam",
+      "requires_names": [
+        "google-api-core",
+        "proto-plus",
+        "protobuf"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.11.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "googleapis-common-protos",
+      "requires_names": [
+        "grpcio",
+        "protobuf"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.75.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "grpcio",
+      "requires_names": [
+        "grpcio-tools",
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.85.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "grpcio-status",
+      "requires_names": [
+        "googleapis-common-protos",
+        "grpcio",
+        "protobuf"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.62.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "h11",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.16.0"
+    },
+    {
+      "cli_entry_points": [
+        "hashid"
+      ],
+      "dependency_role": "direct",
+      "name": "hashID",
+      "requires_names": [],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.1.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "httpcore",
+      "requires_names": [
+        "anyio",
+        "certifi",
+        "h11",
+        "h2",
+        "socksio",
+        "trio"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.0.9"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "httpcore2",
+      "requires_names": [
+        "anyio",
+        "h11",
+        "h2",
+        "socksio",
+        "trio",
+        "truststore"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.13.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "httplib2",
+      "requires_names": [
+        "pyparsing"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.21.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "httptools",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.8.0"
+    },
+    {
+      "cli_entry_points": [
+        "httpx"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "httpx",
+      "requires_names": [
+        "anyio",
+        "brotli",
+        "brotlicffi",
+        "certifi",
+        "click",
+        "h2",
+        "httpcore",
+        "idna",
+        "pygments",
+        "rich",
+        "socksio",
+        "zstandard"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.28.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "httpx-ntlm",
+      "requires_names": [
+        "httpx",
+        "pyspnego"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.4.0"
+    },
+    {
+      "cli_entry_points": [
+        "httpx2"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "httpx2",
+      "requires_names": [
+        "anyio",
+        "backports-zstd",
+        "brotli",
+        "brotlicffi",
+        "click",
+        "h2",
+        "httpcore2",
+        "httpx2-jsfetch",
+        "idna",
+        "pygments",
+        "rich",
+        "socksio",
+        "truststore",
+        "typing-extensions",
+        "wsproto"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.13.0"
+    },
+    {
+      "cli_entry_points": [
+        "idna"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "idna",
+      "requires_names": [
+        "coverage",
+        "hypothesis",
+        "mypy",
+        "pytest",
+        "ruff",
+        "ty"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.20"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "impacket",
+      "requires_names": [
+        "charset-normalizer",
+        "flask",
+        "ldap3",
+        "ldapdomaindump",
+        "pyasn1",
+        "pyasn1-modules",
+        "pycryptodomex",
+        "pyopenssl",
+        "pyreadline3",
+        "six"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.13.1"
+    },
+    {
+      "cli_entry_points": [
+        "inv",
+        "invoke"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "invoke",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.0.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "itsdangerous",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.2.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "Jinja2",
+      "requires_names": [
+        "babel",
+        "markupsafe"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.1.6"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "joblib",
+      "requires_names": [
+        "cloudpickle",
+        "distributed",
+        "lz4",
+        "matplotlib",
+        "memory-profiler",
+        "numpy",
+        "numpydoc",
+        "pandas",
+        "psutil",
+        "pydata-sphinx-theme",
+        "pytest",
+        "pytest-asyncio",
+        "pytest-cov",
+        "pytest-run-parallel",
+        "pytest-timeout",
+        "sphinx",
+        "sphinx-copybutton",
+        "sphinx-design",
+        "sphinx-gallery",
+        "threadpoolctl",
+        "tqdm"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.6.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "joserfc",
+      "requires_names": [
+        "cryptography",
+        "pycryptodome"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.7.5"
+    },
+    {
+      "cli_entry_points": [
+        "kerbrute"
+      ],
+      "dependency_role": "direct",
+      "name": "kerbrute",
+      "requires_names": [
+        "impacket"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.0.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "ldap3",
+      "requires_names": [
+        "pyasn1"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.9.1"
+    },
+    {
+      "cli_entry_points": [
+        "ldapdomaindump",
+        "ldd2bloodhound",
+        "ldd2pretty"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "ldapdomaindump",
+      "requires_names": [
+        "dnspython",
+        "ldap3"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.10.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "lmdb",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.1.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "lxml",
+      "requires_names": [
+        "beautifulsoup4",
+        "cssselect",
+        "html5lib",
+        "lxml-html-clean"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "6.1.3"
+    },
+    {
+      "cli_entry_points": [
+        "markdown-it"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "markdown-it-py",
+      "requires_names": [
+        "commonmark",
+        "coverage",
+        "gprof2dot",
+        "ipykernel",
+        "jupyter-sphinx",
+        "linkify-it-py",
+        "markdown",
+        "markdown-it-pyrs",
+        "mdit-py-plugins",
+        "mdurl",
+        "mistletoe",
+        "mistune",
+        "myst-parser",
+        "panflute",
+        "psutil",
+        "pytest",
+        "pytest-benchmark",
+        "pytest-cov",
+        "pytest-regressions",
+        "pytest-timeout",
+        "pyyaml",
+        "requests",
+        "sphinx",
+        "sphinx-book-theme",
+        "sphinx-copybutton",
+        "sphinx-design"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.2.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "MarkupSafe",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.0.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "marshmallow",
+      "requires_names": [
+        "backports-datetime-fromisoformat",
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.3.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "mdurl",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.1.2"
+    },
+    {
+      "cli_entry_points": [
+        "minidump"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "minidump",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.0.24"
+    },
+    {
+      "cli_entry_points": [
+        "minikerberos-asreproast",
+        "minikerberos-ccache2kirbi",
+        "minikerberos-ccacheedit",
+        "minikerberos-ccacheroast",
+        "minikerberos-cve202233647",
+        "minikerberos-cve202233679",
+        "minikerberos-getNTPKInit",
+        "minikerberos-getS4U2proxy",
+        "minikerberos-getS4U2self",
+        "minikerberos-getTGS",
+        "minikerberos-getTGT",
+        "minikerberos-kerb23hashdecrypt",
+        "minikerberos-kerberoast",
+        "minikerberos-keylist",
+        "minikerberos-kirbi2ccache",
+        "minikerberos-pw"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "minikerberos",
+      "requires_names": [
+        "asn1crypto",
+        "asysocks",
+        "oscrypto",
+        "six",
+        "tqdm",
+        "unicrypto"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.4.9"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "mpmath",
+      "requires_names": [
+        "codecov",
+        "gmpy2",
+        "pycodestyle",
+        "pytest",
+        "pytest-cov",
+        "sphinx",
+        "wheel"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.3.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "msgpack",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.2.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "msgspec",
+      "requires_names": [
+        "pyyaml",
+        "tomli",
+        "tomli-w"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.21.1"
+    },
+    {
+      "cli_entry_points": [
+        "msldap",
+        "msldap-bloodhound"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "msldap",
+      "requires_names": [
+        "asn1crypto",
+        "asyauth",
+        "asysocks",
+        "prompt-toolkit",
+        "tabulate",
+        "tqdm",
+        "unicrypto",
+        "wcwidth",
+        "winacl"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.5.15"
+    },
+    {
+      "cli_entry_points": [
+        "msoffcrypto-tool"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "msoffcrypto-tool",
+      "requires_names": [
+        "cryptography",
+        "olefile"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "6.0.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "mulpyplexer",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.9"
+    },
+    {
+      "cli_entry_points": [
+        "netaddr"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "netaddr",
+      "requires_names": [
+        "ipython"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.3.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "networkx",
+      "requires_names": [
+        "asv",
+        "build",
+        "cairocffi",
+        "changelist",
+        "contextily",
+        "igraph",
+        "intersphinx-registry",
+        "iplotx",
+        "lxml",
+        "matplotlib",
+        "momepy",
+        "mypy",
+        "myst-nb",
+        "numpy",
+        "numpydoc",
+        "osmnx",
+        "pandas",
+        "pillow",
+        "pre-commit",
+        "pydata-sphinx-theme",
+        "pydot",
+        "pygraphviz",
+        "pytest",
+        "pytest-cov",
+        "pytest-mpl",
+        "pytest-randomly",
+        "pytest-xdist",
+        "scikit-learn",
+        "scipy",
+        "seaborn",
+        "sphinx",
+        "sphinx-gallery",
+        "sympy",
+        "texext",
+        "twine",
+        "virtualenv",
+        "wheel"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.6.1"
+    },
+    {
+      "cli_entry_points": [
+        "nltk"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "nltk",
+      "requires_names": [
+        "click",
+        "defusedxml",
+        "joblib",
+        "matplotlib",
+        "numpy",
+        "pyparsing",
+        "python-crfsuite",
+        "regex",
+        "requests",
+        "scikit-learn",
+        "scipy",
+        "tqdm",
+        "twython"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.10.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "nuclei",
+      "requires_names": [],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.1.0"
+    },
+    {
+      "cli_entry_points": [
+        "f2py",
+        "numpy-config"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "numpy",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.5.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "olefile",
+      "requires_names": [
+        "pytest",
+        "pytest-cov"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.47"
+    },
+    {
+      "cli_entry_points": [
+        "ezhexviewer",
+        "ftguess",
+        "mraptor",
+        "msodde",
+        "olebrowse",
+        "oledir",
+        "olefile",
+        "oleid",
+        "olemap",
+        "olemeta",
+        "oleobj",
+        "oletimes",
+        "olevba",
+        "pyxswf",
+        "rtfobj"
+      ],
+      "dependency_role": "direct",
+      "name": "oletools",
+      "requires_names": [
+        "colorclass",
+        "easygui",
+        "msoffcrypto-tool",
+        "olefile",
+        "pcodedmp",
+        "pyparsing",
+        "xlmmacrodeobfuscator"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.60.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "oscrypto",
+      "requires_names": [
+        "asn1crypto"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.3.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "packaging",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "26.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pager",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "paramiko",
+      "requires_names": [
+        "bcrypt",
+        "cryptography",
+        "invoke",
+        "pynacl"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "5.0.0"
+    },
+    {
+      "cli_entry_points": [
+        "pcodedmp"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "pcodedmp",
+      "requires_names": [
+        "oletools",
+        "win-unicode-console"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.2.6"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pefile",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2024.8.26"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "photon",
+      "requires_names": [
+        "requests",
+        "tld",
+        "urllib3"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.1.8.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pick",
+      "requires_names": [
+        "blessed",
+        "windows-curses"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.6.0"
+    },
+    {
+      "cli_entry_points": [
+        "pip",
+        "pip3"
+      ],
+      "dependency_role": "direct",
+      "name": "pip",
+      "requires_names": [],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "26.2.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "platformdirs",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.11.11"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "prompt_toolkit",
+      "requires_names": [
+        "wcwidth"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.0.53"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "proto-plus",
+      "requires_names": [
+        "google-api-core",
+        "protobuf"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.28.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "protobuf",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.25.9"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "psutil",
+      "requires_names": [
+        "abi3audit",
+        "black",
+        "check-manifest",
+        "colorama",
+        "coverage",
+        "packaging",
+        "psleak",
+        "pylint",
+        "pyperf",
+        "pypinfo",
+        "pyreadline3",
+        "pytest",
+        "pytest-cov",
+        "pytest-instafail",
+        "pytest-xdist",
+        "pywin32",
+        "requests",
+        "rstcheck",
+        "ruff",
+        "setuptools",
+        "sphinx",
+        "sphinx-rtd-theme",
+        "toml-sort",
+        "twine",
+        "validate-pyproject",
+        "virtualenv",
+        "vulture",
+        "wheel",
+        "wmi"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "7.2.2"
+    },
+    {
+      "cli_entry_points": [
+        "pyaml"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "pyaml",
+      "requires_names": [
+        "pyyaml",
+        "unidecode"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "26.7.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyasn1",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.6.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyasn1_modules",
+      "requires_names": [
+        "pyasn1"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.4.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pycares",
+      "requires_names": [
+        "cffi",
+        "idna"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "5.2.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pycparser",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.12"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pycryptodome",
+      "requires_names": [
+        "pycryptodome-test-vectors",
+        "pytest"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.2.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pycryptodomex",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.24.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "pycurl",
+      "requires_names": [],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "7.48.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pydantic",
+      "requires_names": [
+        "annotated-types",
+        "email-validator",
+        "pydantic-core",
+        "typing-extensions",
+        "typing-inspection",
+        "tzdata"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.13.5"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pydantic_core",
+      "requires_names": [
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.46.5"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pydemumble",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.1.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyelftools",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.33"
+    },
+    {
+      "cli_entry_points": [
+        "pygmentize"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "Pygments",
+      "requires_names": [
+        "colorama"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.21.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "PyNaCl",
+      "requires_names": [
+        "cffi",
+        "hypothesis",
+        "pytest",
+        "pytest-cov",
+        "pytest-xdist",
+        "sphinx",
+        "sphinx-rtd-theme"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.6.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyOpenSSL",
+      "requires_names": [
+        "cryptography",
+        "pretend",
+        "pytest",
+        "pytest-rerunfailures",
+        "sphinx",
+        "sphinx-rtd-theme",
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "26.4.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyparsing",
+      "requires_names": [
+        "jinja2",
+        "railroad-diagrams"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.3.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pypcode",
+      "requires_names": [
+        "coverage",
+        "furo",
+        "gcovr",
+        "ipython",
+        "myst-parser",
+        "pytest",
+        "pytest-cov",
+        "sphinx",
+        "sphinx-autodoc-typehints"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.0.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pypsrp",
+      "requires_names": [
+        "black",
+        "build",
+        "cryptography",
+        "isort",
+        "mypy",
+        "pre-commit",
+        "pyspnego",
+        "pytest",
+        "pytest-cov",
+        "pytest-mock",
+        "pyyaml",
+        "requests",
+        "requests-credssp",
+        "types-pyyaml",
+        "types-requests",
+        "xmldiff"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.9.1"
+    },
+    {
+      "cli_entry_points": [
+        "pypykatz"
+      ],
+      "dependency_role": "direct",
+      "name": "pypykatz",
+      "requires_names": [
+        "aesedb",
+        "aiosmb",
+        "aiowinreg",
+        "minidump",
+        "minikerberos",
+        "msldap",
+        "tqdm",
+        "unicrypto",
+        "winacl"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.6.13"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "pyrdp",
+      "requires_names": [
+        "numpy"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.1.6"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pysnmp",
+      "requires_names": [
+        "bump2version",
+        "codecov",
+        "cryptography",
+        "doc8",
+        "flake8",
+        "furo",
+        "jinja2",
+        "pep8-naming",
+        "pre-commit",
+        "pyasn1",
+        "pysmi",
+        "pytest",
+        "pytest-asyncio",
+        "pytest-codecov",
+        "pytest-cov",
+        "pytest-rerunfailures",
+        "ruff",
+        "sphinx",
+        "sphinx-copybutton",
+        "sphinx-notfound-page",
+        "sphinx-polyversion",
+        "sphinx-sitemap-lextudio",
+        "tomli"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "7.1.29"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "PySocks",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.7.1"
+    },
+    {
+      "cli_entry_points": [
+        "pyspnego-parse"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "pyspnego",
+      "requires_names": [
+        "cryptography",
+        "gssapi",
+        "krb5",
+        "ruamel-yaml",
+        "sspilib"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.12.2"
+    },
+    {
+      "cli_entry_points": [
+        "pystache",
+        "pystache-test"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "pystache",
+      "requires_names": [
+        "coverage",
+        "coverage-python-version",
+        "importlib-metadata",
+        "pytest",
+        "pytest-cov",
+        "recommonmark",
+        "sphinx",
+        "sphinx-git",
+        "sphinx-rtd-theme",
+        "sphinxcontrib-apidoc"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.6.8"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "python-dateutil",
+      "requires_names": [
+        "six"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.9.0.post0"
+    },
+    {
+      "cli_entry_points": [
+        "dotenv"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "python-dotenv",
+      "requires_names": [
+        "click"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.2.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "python-multipart",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.0.32"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyu2f",
+      "requires_names": [
+        "six"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.1.5"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyvex",
+      "requires_names": [
+        "atheris",
+        "bitstring",
+        "cffi"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "10.0.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyxbe",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.0.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyxdia",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.1.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "PyYAML",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "6.0.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "regex",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2026.9.10"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "requests",
+      "requires_names": [
+        "certifi",
+        "chardet",
+        "charset-normalizer",
+        "idna",
+        "pysocks",
+        "urllib3"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.32.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "requests-toolbelt",
+      "requires_names": [
+        "requests"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.0.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "requests_ntlm",
+      "requires_names": [
+        "cryptography",
+        "pyspnego",
+        "requests"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.3.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "requests_pkcs12",
+      "requires_names": [
+        "build",
+        "cryptography",
+        "requests",
+        "twine",
+        "wheel"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.27"
+    },
+    {
+      "cli_entry_points": [
+        "responder"
+      ],
+      "dependency_role": "direct",
+      "name": "responder",
+      "requires_names": [
+        "a2wsgi",
+        "alabaster",
+        "apispec",
+        "build",
+        "chardet",
+        "cryptography",
+        "docopt-ng",
+        "fakeredis",
+        "flask",
+        "granian",
+        "graphene",
+        "graphql-core",
+        "httpx",
+        "httpx2",
+        "itsdangerous",
+        "jinja2",
+        "marshmallow",
+        "msgpack",
+        "mypy",
+        "myst-parser",
+        "openapi-spec-validator",
+        "orjson",
+        "pueblo",
+        "pydantic",
+        "pyjwt",
+        "pyproject-fmt",
+        "pytest",
+        "pytest-cov",
+        "pytest-mock",
+        "pytest-rerunfailures",
+        "python-multipart",
+        "pyyaml",
+        "ruff",
+        "sphinx",
+        "sphinx-autobuild",
+        "sphinx-copybutton",
+        "sphinx-design-elements",
+        "starlette",
+        "twine",
+        "types-pyyaml",
+        "uvicorn",
+        "validate-pyproject"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "9.2.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "rich",
+      "requires_names": [
+        "ipywidgets",
+        "markdown-it-py",
+        "pygments"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "15.0.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "routersploit",
+      "requires_names": [
+        "flake8",
+        "paramiko",
+        "pycryptodome",
+        "pysnmp",
+        "pytest",
+        "pytest-forked",
+        "pytest-xdist",
+        "requests"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.4.7"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "ruamel.yaml",
+      "requires_names": [
+        "mercurial",
+        "ruamel-yaml-clib",
+        "ruamel-yaml-clibz",
+        "ruamel-yaml-jinja2",
+        "ryd"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.19.1"
+    },
+    {
+      "cli_entry_points": [
+        "safety"
+      ],
+      "dependency_role": "direct",
+      "name": "safety",
+      "requires_names": [
+        "authlib",
+        "certifi",
+        "click",
+        "dparse",
+        "filelock",
+        "httpx",
+        "jinja2",
+        "marshmallow",
+        "nltk",
+        "packaging",
+        "pydantic",
+        "pygithub",
+        "python-gitlab",
+        "ruamel-yaml",
+        "safety-schemas",
+        "spdx-tools",
+        "tenacity",
+        "tomli",
+        "tomlkit",
+        "truststore",
+        "typer",
+        "typing-extensions"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.8.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "safety-schemas",
+      "requires_names": [
+        "dparse",
+        "packaging",
+        "pydantic",
+        "ruamel-yaml",
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.0.16"
+    },
+    {
+      "cli_entry_points": [
+        "scapy"
+      ],
+      "dependency_role": "direct",
+      "name": "scapy",
+      "requires_names": [
+        "cryptography",
+        "ipython",
+        "matplotlib",
+        "pyx",
+        "sphinx",
+        "sphinx-rtd-theme",
+        "tox"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.7.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "shellingham",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.5.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "six",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.17.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "direct",
+      "name": "slixmpp",
+      "requires_names": [
+        "aiodns",
+        "aiohttp",
+        "cryptography",
+        "defusedxml",
+        "emoji",
+        "pyasn1",
+        "pyasn1-modules"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.17.0"
+    },
+    {
+      "cli_entry_points": [
+        "smbmap"
+      ],
+      "dependency_role": "direct",
+      "name": "smbmap",
+      "requires_names": [
+        "configparser",
+        "impacket",
+        "pyasn1",
+        "pycryptodome",
+        "termcolor"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.10.8"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "smmap",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "5.0.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "sortedcontainers",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.4.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "soupsieve",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.9.2"
+    },
+    {
+      "cli_entry_points": [
+        "sqlmap"
+      ],
+      "dependency_role": "direct",
+      "name": "sqlmap",
+      "requires_names": [],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.10.9"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "starlette",
+      "requires_names": [
+        "anyio",
+        "httpx",
+        "httpx2",
+        "itsdangerous",
+        "jinja2",
+        "python-multipart",
+        "pyyaml",
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.6.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "stevedore",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "5.9.1"
+    },
+    {
+      "cli_entry_points": [
+        "sublist3r"
+      ],
+      "dependency_role": "direct",
+      "name": "Sublist3r",
+      "requires_names": [
+        "argparse",
+        "dnspython",
+        "requests"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.0"
+    },
+    {
+      "cli_entry_points": [
+        "sublist3r"
+      ],
+      "dependency_role": "direct",
+      "name": "Sublist3r",
+      "requires_names": [
+        "argparse",
+        "dnspython",
+        "requests"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.0"
+    },
+    {
+      "cli_entry_points": [
+        "isympy"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "sympy",
+      "requires_names": [
+        "hypothesis",
+        "mpmath",
+        "pytest"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.14.0"
+    },
+    {
+      "cli_entry_points": [
+        "tabulate"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "tabulate",
+      "requires_names": [
+        "wcwidth"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.10.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "tenacity",
+      "requires_names": [
+        "pytest",
+        "reno",
+        "sphinx",
+        "tornado",
+        "typeguard"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "9.1.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "termcolor",
+      "requires_names": [
+        "pytest",
+        "pytest-cov"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.3.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "tibs",
+      "requires_names": [
+        "build",
+        "hypothesis",
+        "pyright",
+        "pytest",
+        "pytest-benchmark"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.5.7"
+    },
+    {
+      "cli_entry_points": [
+        "update-tld-names"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "tld",
+      "requires_names": [
+        "build",
+        "coverage",
+        "detect-secrets",
+        "doc8",
+        "fake-py",
+        "ipython",
+        "mypy",
+        "pkginfo",
+        "pydoclint",
+        "pytest",
+        "pytest-codeblock",
+        "pytest-cov",
+        "pytest-ordering",
+        "ruff",
+        "sphinx",
+        "sphinx-autobuild",
+        "sphinx-llms-txt-link",
+        "sphinx-no-pragma",
+        "sphinx-rtd-theme",
+        "sphinx-source-tree",
+        "tld",
+        "tox",
+        "twine",
+        "uv",
+        "wheel"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.13.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "tomlkit",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.15.1"
+    },
+    {
+      "cli_entry_points": [
+        "tqdm"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "tqdm",
+      "requires_names": [
+        "colorama",
+        "envwrap",
+        "ipywidgets",
+        "requests",
+        "slack-sdk"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.70.1"
+    },
+    {
+      "cli_entry_points": [
+        "trufflehog"
+      ],
+      "dependency_role": "direct",
+      "name": "truffleHog",
+      "requires_names": [
+        "gitpython",
+        "trufflehogregexes"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.2.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "truffleHogRegexes",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.0.7"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "truststore",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.10.4"
+    },
+    {
+      "cli_entry_points": [
+        "typer"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "typer",
+      "requires_names": [
+        "annotated-doc",
+        "click",
+        "rich",
+        "shellingham"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.25.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "typing-inspection",
+      "requires_names": [
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.4.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "typing_extensions",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.16.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "uefi_firmware",
+      "requires_names": [
+        "dictdiffer",
+        "future"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.16"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "unicrypto",
+      "requires_names": [
+        "pycryptodomex"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.0.12"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "uritemplate",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.2.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "urllib3",
+      "requires_names": [
+        "backports-zstd",
+        "brotli",
+        "brotlicffi",
+        "h2",
+        "pysocks"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.8.0"
+    },
+    {
+      "cli_entry_points": [
+        "uvicorn"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "uvicorn",
+      "requires_names": [
+        "click",
+        "h11",
+        "httptools",
+        "python-dotenv",
+        "pyyaml",
+        "typing-extensions",
+        "uvloop",
+        "watchfiles",
+        "websockets"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.53.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "uvloop",
+      "requires_names": [
+        "aiohttp",
+        "cython",
+        "flake8",
+        "mypy",
+        "psutil",
+        "pycodestyle",
+        "pyopenssl",
+        "setuptools",
+        "sphinx",
+        "sphinx-rtd-theme",
+        "sphinxcontrib-asyncio"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.22.1"
+    },
+    {
+      "cli_entry_points": [
+        "vol",
+        "volshell"
+      ],
+      "dependency_role": "direct",
+      "name": "volatility3",
+      "requires_names": [
+        "capstone",
+        "gcsfs",
+        "jsonschema",
+        "leechcorepyc",
+        "pefile",
+        "pillow",
+        "pyarrow",
+        "pycryptodome",
+        "pyinstaller",
+        "pyinstaller-hooks-contrib",
+        "pytest",
+        "pytest-cov",
+        "s3fs",
+        "sphinx",
+        "sphinx-autodoc-typehints",
+        "sphinx-rtd-theme",
+        "types-jsonschema",
+        "volatility3",
+        "yara-python",
+        "yara-x"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.28.2"
+    },
+    {
+      "cli_entry_points": [
+        "wafw00f"
+      ],
+      "dependency_role": "direct",
+      "name": "wafw00f",
+      "requires_names": [
+        "prospector",
+        "pytest",
+        "pytest-mock",
+        "requests",
+        "responses",
+        "sphinx"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.4.2"
+    },
+    {
+      "cli_entry_points": [
+        "watchfiles"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "watchfiles",
+      "requires_names": [
+        "anyio"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.2.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "wcwidth",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.8.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "websockets",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "13.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "Werkzeug",
+      "requires_names": [
+        "markupsafe",
+        "watchdog"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.1.9"
+    },
+    {
+      "cli_entry_points": [
+        "wes"
+      ],
+      "dependency_role": "direct",
+      "name": "wesng",
+      "requires_names": [],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.0.3"
+    },
+    {
+      "cli_entry_points": [
+        "whatweb"
+      ],
+      "dependency_role": "direct",
+      "name": "whatweb",
+      "requires_names": [
+        "beautifulsoup4",
+        "colorama",
+        "dnspython",
+        "requests"
+      ],
+      "role_evidence": "installed REQUESTED marker",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.0.8"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "winacl",
+      "requires_names": [
+        "cryptography"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.1.9"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "z3-solver",
+      "requires_names": [
+        "importlib-resources"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "5.1.0.0"
+    }
+  ],
+  "purpose": "Shared project venv",
+  "python": {
+    "architecture": "arm64",
+    "implementation": "cpython",
+    "version": "3.13.7"
+  },
+  "reproducibility_level": 2,
+  "schema_version": 1
+}

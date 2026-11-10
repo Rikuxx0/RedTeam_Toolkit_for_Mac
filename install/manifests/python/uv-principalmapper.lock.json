@@ -1,0 +1,159 @@
+{
+  "direct_requirement_file": "unknown-or-uv-receipt",
+  "distribution_count": 9,
+  "environment_id": "uv-principalmapper",
+  "level_explanation": "Installed name/version snapshot only. Dependency resolution, wheel hashes, indexes and markers are not fully locked.",
+  "location": "uv-tool:principalmapper",
+  "manager": "uv-tool",
+  "package_list_canonicalization": "lowercase name, replace _ and . with -, append ==version and newline; sort by lowercase name then version; duplicates preserved",
+  "package_list_sha256": "c1804bc132c3b34ebe3302211240423023bed3f13acd8286ed90bdb65d0206a8",
+  "packages": [
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "botocore",
+      "requires_names": [
+        "awscrt",
+        "jmespath",
+        "python-dateutil",
+        "urllib3"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.42.97"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "jmespath",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.1.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "packaging",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "26.3"
+    },
+    {
+      "cli_entry_points": [
+        "pmapper"
+      ],
+      "dependency_role": "direct",
+      "name": "principalmapper",
+      "requires_names": [
+        "botocore",
+        "packaging",
+        "pydot",
+        "python-dateutil"
+      ],
+      "role_evidence": "uv-receipt requirement",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.1.5"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pydot",
+      "requires_names": [
+        "chardet",
+        "mypy",
+        "parameterized",
+        "pydot",
+        "pyparsing",
+        "pytest",
+        "pytest-cov",
+        "pytest-xdist",
+        "ruff",
+        "tox",
+        "zest-releaser"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.0.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyparsing",
+      "requires_names": [
+        "jinja2",
+        "railroad-diagrams"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.3.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "python-dateutil",
+      "requires_names": [
+        "six"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.9.0.post0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "six",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.17.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "urllib3",
+      "requires_names": [
+        "brotli",
+        "brotlicffi",
+        "brotlipy",
+        "certifi",
+        "cryptography",
+        "idna",
+        "ipaddress",
+        "pyopenssl",
+        "pysocks",
+        "urllib3-secure-extra"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.26.20"
+    }
+  ],
+  "purpose": "Principal Mapper CLI",
+  "python": {
+    "architecture": "arm64",
+    "implementation": "cpython",
+    "version": "3.9.6"
+  },
+  "reproducibility_level": 2,
+  "schema_version": 1
+}

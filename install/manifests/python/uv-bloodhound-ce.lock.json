@@ -1,0 +1,363 @@
+{
+  "direct_requirement_file": "unknown-or-uv-receipt",
+  "distribution_count": 23,
+  "environment_id": "uv-bloodhound-ce",
+  "level_explanation": "Installed name/version snapshot only. Dependency resolution, wheel hashes, indexes and markers are not fully locked.",
+  "location": "uv-tool:bloodhound-ce",
+  "manager": "uv-tool",
+  "package_list_canonicalization": "lowercase name, replace _ and . with -, append ==version and newline; sort by lowercase name then version; duplicates preserved",
+  "package_list_sha256": "ec2ceac7f0c955fd8b7971a7580f34e6be45f6326d65db82c7f3ebae670342f6",
+  "packages": [
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "blinker",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.9.0"
+    },
+    {
+      "cli_entry_points": [
+        "bloodhound-ce-python"
+      ],
+      "dependency_role": "direct",
+      "name": "bloodhound-ce",
+      "requires_names": [
+        "dnspython",
+        "impacket",
+        "ldap3",
+        "pyasn1",
+        "pycryptodome"
+      ],
+      "role_evidence": "uv-receipt requirement",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.9.1"
+    },
+    {
+      "cli_entry_points": [
+        "cffi-gen-src"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "cffi",
+      "requires_names": [
+        "pycparser"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.1.1"
+    },
+    {
+      "cli_entry_points": [
+        "normalizer"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "charset-normalizer",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.5.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "click",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "8.5.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "cryptography",
+      "requires_names": [
+        "bcrypt",
+        "cffi",
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "50.0.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "dnspython",
+      "requires_names": [
+        "aioquic",
+        "black",
+        "coverage",
+        "cryptography",
+        "h2",
+        "httpcore2",
+        "httpx2",
+        "hypercorn",
+        "idna",
+        "pyright",
+        "pytest",
+        "pytest-cov",
+        "quart-trio",
+        "ruff",
+        "sphinx",
+        "sphinx-rtd-theme",
+        "trio",
+        "trustme",
+        "ty",
+        "wmi"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.9.2"
+    },
+    {
+      "cli_entry_points": [
+        "flask"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "Flask",
+      "requires_names": [
+        "asgiref",
+        "blinker",
+        "click",
+        "importlib-metadata",
+        "itsdangerous",
+        "jinja2",
+        "markupsafe",
+        "python-dotenv",
+        "werkzeug"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.1.3"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "impacket",
+      "requires_names": [
+        "charset-normalizer",
+        "flask",
+        "ldap3",
+        "ldapdomaindump",
+        "pyasn1",
+        "pyasn1-modules",
+        "pycryptodomex",
+        "pyopenssl",
+        "pyreadline3",
+        "six"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.13.1"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "itsdangerous",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.2.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "Jinja2",
+      "requires_names": [
+        "babel",
+        "markupsafe"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.1.6"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "ldap3",
+      "requires_names": [
+        "pyasn1"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "2.9.1"
+    },
+    {
+      "cli_entry_points": [
+        "ldapdomaindump",
+        "ldd2bloodhound",
+        "ldd2pretty"
+      ],
+      "dependency_role": "transitive_candidate",
+      "name": "ldapdomaindump",
+      "requires_names": [
+        "dnspython",
+        "ldap3"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.10.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "MarkupSafe",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.0.4"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyasn1",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.6.5"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyasn1_modules",
+      "requires_names": [
+        "pyasn1"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "0.4.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pycparser",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.12"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pycryptodome",
+      "requires_names": [
+        "pycryptodome-test-vectors",
+        "pytest"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.3.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pycryptodomex",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.24.2"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "pyOpenSSL",
+      "requires_names": [
+        "cryptography",
+        "pretend",
+        "pytest",
+        "pytest-rerunfailures",
+        "sphinx",
+        "sphinx-rtd-theme",
+        "typing-extensions"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "26.4.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "six",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "1.17.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "typing_extensions",
+      "requires_names": [],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "4.16.0"
+    },
+    {
+      "cli_entry_points": [],
+      "dependency_role": "transitive_candidate",
+      "name": "Werkzeug",
+      "requires_names": [
+        "markupsafe",
+        "watchdog"
+      ],
+      "role_evidence": "named by installed Requires-Dist; direct install cannot be excluded",
+      "source": {
+        "kind": "index-or-local-unknown"
+      },
+      "version": "3.1.9"
+    }
+  ],
+  "purpose": "BloodHound CE Python CLI",
+  "python": {
+    "architecture": "arm64",
+    "implementation": "cpython",
+    "version": "3.11.14"
+  },
+  "reproducibility_level": 2,
+  "schema_version": 1
+}
