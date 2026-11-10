@@ -40,7 +40,7 @@ cd RedTeam_Toolkit_for_Mac/install
 |---|---|
 | C2 | Sliver Server、Sliver Client、Havoc Teamserver / GUI、Empire / Starkiller |
 | Active Directory | NetExec、Certipy-AD、BloodHound CE、bloodhound-ce-python、Kerbrute、Impacket、dploot、pypykatz、Responder |
-| Windows専用 | Rubeus、Mimikatz |
+| Windows専用 | Rubeus、(Mimikatz) |
 | クラウド・Kubernetes | AWS CLI、Azure CLI、Google Cloud CLI、AzureHound、Graphpython、GraphRunner、ROADtx、ROADrecon、Principal Mapper、GCP-Hound、GCP Scanner、kubectl、KubeHound、kind、IAMhounddog、aws-enumerator、GoAWSConsoleSpray |
 | ネットワーク | Nmap、Masscan、Aircrack-ng、Bettercap、RustScan、Hydra、tcpdump、dnsmap、sslscan、testssl、mitmproxy、Scapy、ProxyChains-NG、socat |
 | Web | Nuclei、ffuf、feroxbuster、Gobuster、sqlmap、WPScan、Amass、Subfinder、dirsearch、git-dumper、hakrawler、gauplus、waybackurls、subzy、github-subdomains、Web Exploit Scripts、wafw00f、DNSRecon、dnstwist、gf |
