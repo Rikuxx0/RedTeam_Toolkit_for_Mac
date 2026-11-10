@@ -16,7 +16,7 @@ Appleシリコン搭載のMacOSを対象とした、レッドチーム演習お�
 | 区分 | 要件 |
 |---|---|
 | 必須 | Apple Silicon（ARM64）でネイティブ実行するmacOS、Bash、Python 3.10以上。クローンにはGitが必要です。 |
-| ツール導入時 | 対象に応じてHomebrew、Go、Git、ネットワーク接続、十分な空き容量が必要です。 |
+| ツール導入時 | 対象に応じてHomebrew、Go、Git、ネットワーク接続が必要です。標準導入に含むワードリストの取得前には16 GiB以上の空き容量が必要です。 |
 | Docker対象を利用する場合 | Docker Desktop（Docker Engine・Composeを含む）を事前に導入・起動してください。 |
 
 公開用インストーラーとManifestは `install/` にあります。既存ツールの公式CLI・GUIを利用し、C2サービスやDockerコンテナはインストール時に自動起動せず、インストーラー本体に追加のPythonパッケージは不要です。また、`--help`、`--list`、`--dry-run` にDockerは不要で、インストーラーがDockerコンテナを自動起動することもありません。
@@ -50,9 +50,12 @@ cd RedTeam_Toolkit_for_Mac/install
 | DevSecOps | 3 | Grype、Semgrep、TruffleHog |
 | OSINT | 3 | Recon-ng、Sherlock、theHarvester |
 | フレームワーク | 1 | Metasploit |
+| ワードリスト | 1 | Wordlist Collection |
 | 実行基盤・開発依存 | 13 | Docker Desktop / Compose、Python、Go、AppleClang、Node.js、Ruby、CMake、Qt 5、MinGW-w64、.NET SDK、PowerShell、uv、pipx |
 
 また、導入状態は `./install.sh --list` または `--audit` で確認できます。詳細は[使用方法](install/docs/installer-usage.md)を参照してください。
+
+ワードリストは `minimal`・`standard`・`full` のすべてに含まれます。`./install.sh --dry-run`で予定を確認してください。10個のGitリポジトリを固定コミットで取得し、既存の`wordlists/`は更新・上書きしません。実際の取得量は未検証のため、開始前に16 GiB以上の空き容量を要求します。
 
 **注意**
 

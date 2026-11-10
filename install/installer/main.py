@@ -36,8 +36,8 @@ def arguments(argv=None):
     return parser.parse_args(argv)
 
 
-def _serialize_plan(item, tool):
-    return {
+def _serialize_plan(item, tool, lock):
+    row = {
         "id": item.ident,
         "category": tool["category"],
         "method": item.method,
@@ -49,6 +49,9 @@ def _serialize_plan(item, tool):
         "version": tool["version"],
         "estimated_bytes": item.estimated_bytes,
     }
+    if item.action == "wordlists":
+        row["repositories"] = lock["wordlist_bundle"]["repositories"]
+    return row
 
 
 def _print_rows(rows: list[dict], mode: str) -> None:
@@ -135,16 +138,21 @@ def main(argv=None, root: Path = ROOT) -> int:
         return 2 if args.verify and any(row["state"] in ("incompatible", "broken") for row in rows) else 0
     detector = Detector(root, manifest, lock)
     plan = build_plan(root, manifest, lock, ids, detector)
-    rows = [_serialize_plan(item, by_id[item.ident]) for item in plan]
+    rows = [_serialize_plan(item, by_id[item.ident], lock) for item in plan]
     free = shutil.disk_usage(root.parent if root.name == "install" else root).free
     known = sum(item.estimated_bytes or 0 for item in plan if item.result == "ready")
     unknown = sum(item.result == "ready" and item.estimated_bytes is None for item in plan)
-    summary = {"profile": args.profile, "selected_count": len(ids), "free_bytes": free, "known_required_bytes": known, "unknown_size_actions": unknown, "items": rows}
+    wordlist_reserve = lock["wordlist_bundle"]["minimum_free_bytes"] if any(item.result == "ready" and item.action == "wordlists" for item in plan) else 0
+    summary = {"profile": args.profile, "selected_count": len(ids), "free_bytes": free, "known_required_bytes": known, "unknown_size_actions": unknown, "wordlist_minimum_free_bytes": wordlist_reserve, "items": rows}
     if args.json:
         print(json.dumps(summary, ensure_ascii=False, indent=2))
     else:
-        print(f"Profile={args.profile} selected={len(ids)} free={free} bytes known-minimum={known} bytes unknown-size-actions={unknown}")
+        print(f"Profile={args.profile} selected={len(ids)} free={free} bytes known-minimum={known} bytes unknown-size-actions={unknown} wordlist-minimum-free={wordlist_reserve} bytes")
         _print_rows(rows, "plan")
+        if wordlist_reserve:
+            print("Pinned wordlist sources:")
+            for repository in lock["wordlist_bundle"]["repositories"]:
+                print(f"  {repository['name']}: {repository['url']} @ {repository['revision']}")
     if args.dry_run:
         return 0
     if not host_compatible():
@@ -152,6 +160,9 @@ def main(argv=None, root: Path = ROOT) -> int:
         return 3
     if known > free:
         print("error: insufficient free disk space for known artifacts", file=sys.stderr)
+        return 3
+    if wordlist_reserve > free:
+        print("error: insufficient free disk space for wordlist collection", file=sys.stderr)
         return 3
     ready = [item for item in plan if item.result == "ready"]
     if not ready:

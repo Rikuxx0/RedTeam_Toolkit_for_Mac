@@ -35,8 +35,8 @@ jobs:
           python3 -m installer.main --dry-run --profile minimal --json > /tmp/installer-plan.json
           python3 - <<'PY'
           import json
-          assert len(json.load(open('/tmp/installer-list.json'))) == 109
-          assert json.load(open('/tmp/installer-plan.json'))['selected_count'] == 6
+          assert len(json.load(open('/tmp/installer-list.json'))) == 110
+          assert json.load(open('/tmp/installer-plan.json'))['selected_count'] == 7
           PY
       - name: Limited secret and personal path scan
         run: |

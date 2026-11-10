@@ -6,7 +6,7 @@ README.en.md
 install/c2/empire/.env.example
 install/c2/empire/README.md
 install/c2/empire/compose.yaml
-install/docs/distribution.md
+install/distribution.md
 install/docs/installer-usage.md
 install/docs/publication-files.txt
 install/docs/reproducibility-gaps.md

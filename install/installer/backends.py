@@ -105,6 +105,8 @@ class Backends:
                 return self._docker(tool)
             if item.action == "git":
                 return self._git(tool)
+            if item.action == "wordlists":
+                return self._wordlists(tool)
             raise InstallError("unsupported backend")
         except InstallError as exc:
             return InstallResult(item.ident, exc.result, str(exc))
@@ -235,3 +237,39 @@ class Backends:
                 raise InstallError("Git destination appeared during clone")
             checkout.rename(dest)
         return InstallResult(tool["id"], "success", "fixed Git revision placed in absent directory", "commit matched")
+
+    def _wordlists(self, tool: dict) -> InstallResult:
+        destination_root = _safe_repo_destination(self.project_root, "wordlists")
+        if destination_root.is_symlink() or (destination_root.exists() and not destination_root.is_dir()):
+            raise InstallError("wordlists destination is not a normal directory")
+        if shutil.disk_usage(self.project_root).free < self.lock["wordlist_bundle"]["minimum_free_bytes"]:
+            raise InstallError("insufficient free disk space for wordlist collection")
+        # Refuse changed or unpinned existing content before creating anything.
+        state = Detector(self.root, self.manifest, self.lock).detect(tool)
+        if state.state != "missing":
+            raise InstallError("wordlist state changed before installation: " + state.reason)
+        previously_present = {
+            repository["name"] for repository in self.lock["wordlist_bundle"]["repositories"]
+            if (destination_root / repository["name"]).exists()
+        }
+        destination_root.mkdir(parents=True, exist_ok=True)
+        installed = 0
+        for repository in self.lock["wordlist_bundle"]["repositories"]:
+            dest = _safe_repo_destination(destination_root, repository["name"])
+            if dest.exists() or dest.is_symlink():
+                if repository["name"] not in previously_present:
+                    raise InstallError("wordlist destination appeared during installation")
+                continue  # The detector already checked the pinned revision and clean tree.
+            with tempfile.TemporaryDirectory(prefix=".installer-wordlists-", dir=destination_root) as directory:
+                checkout = Path(directory) / "checkout"
+                _checked(self.runner, ["git", "clone", "--depth=1", "--filter=blob:none", "--no-checkout", "--no-recurse-submodules", repository["url"], str(checkout)])
+                _checked(self.runner, ["git", "-C", str(checkout), "fetch", "--depth=1", "origin", repository["revision"]])
+                _checked(self.runner, ["git", "-C", str(checkout), "checkout", "--detach", repository["revision"]])
+                head = _checked(self.runner, ["git", "-C", str(checkout), "rev-parse", "HEAD"]).stdout.strip()
+                if head != repository["revision"] or (checkout / ".gitmodules").exists():
+                    raise InstallError("wordlist revision mismatch or unpinned submodules")
+                if dest.exists() or dest.is_symlink():
+                    raise InstallError("wordlist destination appeared during clone")
+                checkout.rename(dest)
+                installed += 1
+        return InstallResult(tool["id"], "success", f"{installed} pinned wordlist repositories installed; existing directories preserved", "Git commits matched")

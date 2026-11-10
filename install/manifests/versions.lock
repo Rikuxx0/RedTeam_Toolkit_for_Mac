@@ -1062,6 +1062,11 @@
       "status": "installed",
       "version": "4.6.8"
     },
+    "wordlists": {
+      "revision": "unknown",
+      "status": "missing",
+      "version": "2026-11-10 Git pins"
+    },
     "wpscan": {
       "revision": "unknown",
       "status": "installed",
@@ -1077,5 +1082,60 @@
       "status": "installed",
       "version": "2.17.0"
     }
+  },
+  "wordlist_bundle": {
+    "minimum_free_bytes": 17179869184,
+    "repositories": [
+      {
+        "name": "seclists",
+        "revision": "97f5398ef4ab2bc7d5961e6b1d3d7157830d86f2",
+        "url": "https://github.com/danielmiessler/SecLists.git"
+      },
+      {
+        "name": "fuzzdb",
+        "revision": "5656ab25dc6bb43bae32236fab775658a90d7380",
+        "url": "https://github.com/fuzzdb-project/fuzzdb.git"
+      },
+      {
+        "name": "payloads",
+        "revision": "08ea40e77db3f42ef8f20c65196f3936a19b6c86",
+        "url": "https://github.com/swisskyrepo/PayloadsAllTheThings.git"
+      },
+      {
+        "name": "bruteforce",
+        "revision": "91be69f44c324861c101738ef1fc83804d7d6664",
+        "url": "https://github.com/random-robbie/bruteforce-lists.git"
+      },
+      {
+        "name": "probable-wordlists",
+        "revision": "2df55facf06c7742f2038a8f6607ea9071596128",
+        "url": "https://github.com/berzerk0/Probable-Wordlists.git"
+      },
+      {
+        "name": "wfuzz-lists",
+        "revision": "2263cd0932fef333118cd197656f709141bab615",
+        "url": "https://github.com/xmendez/wfuzz.git"
+      },
+      {
+        "name": "assetnote",
+        "revision": "6dea231f4cbd356a637851b1c13b83de4da00adb",
+        "url": "https://github.com/assetnote/wordlists.git"
+      },
+      {
+        "name": "robots-disallowed",
+        "revision": "5ef23b896bfdd54de4fe8dbaf171812c13bfb64f",
+        "url": "https://github.com/danielmiessler/RobotsDisallowed.git"
+      },
+      {
+        "name": "fuzz-dicts",
+        "revision": "0652d6581311616576f347f9b7be61c9746462e4",
+        "url": "https://github.com/TheKingOfDuck/fuzzDicts.git"
+      },
+      {
+        "name": "tennc-fuzzdb",
+        "revision": "77e26919d18bab0707e0df21fa5b72f45b456bdf",
+        "url": "https://github.com/tennc/fuzzdb.git"
+      }
+    ]
   }
 }

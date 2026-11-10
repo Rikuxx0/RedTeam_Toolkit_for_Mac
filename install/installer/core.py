@@ -161,6 +161,30 @@ class Detector:
         ident, method = tool["id"], tool["install_method"]
         if not host_compatible():
             return Detection("incompatible", "host is not macOS arm64")
+        if method == "wordlist-bundle":
+            directory = self.project_root / "wordlists"
+            if directory.is_symlink() or (directory.exists() and not directory.is_dir()):
+                return Detection("incompatible", "wordlists destination is not a normal directory")
+            if not self.which("git"):
+                return Detection("unknown", "Git is required for pinned wordlists")
+            missing = 0
+            for repository in self.lock["wordlist_bundle"]["repositories"]:
+                destination = directory / repository["name"]
+                if destination.is_symlink():
+                    return Detection("incompatible", "wordlist destination is a symlink")
+                if not destination.exists():
+                    missing += 1
+                    continue
+                if not destination.is_dir() or not (destination / ".git").exists():
+                    return Detection("incompatible", "wordlist destination has unverified content")
+                try:
+                    head = self.runner(["git", "-C", str(destination), "rev-parse", "HEAD"])
+                    dirty = self.runner(["git", "-C", str(destination), "status", "--porcelain"])
+                except (OSError, subprocess.TimeoutExpired):
+                    return Detection("unknown", "wordlist revision could not be read")
+                if head.returncode or head.stdout.strip() != repository["revision"] or dirty.returncode or dirty.stdout.strip():
+                    return Detection("incompatible", "wordlist revision differs or checkout has local changes")
+            return Detection("missing" if missing else "verified", f"{missing} pinned wordlist repositories absent" if missing else "all pinned wordlist revisions match")
         if method == "docker-compose":
             compose = self._file_path(tool["executable"])
             if not compose or not compose.is_file():
@@ -310,6 +334,8 @@ def capability(tool: dict, lock: dict, manifest: dict) -> tuple[str, str]:
         return "manual-required", f"Python environment lock Level {level or 'unknown'}; artifact hashes and resolver pin absent"
     if method == "pipx":
         return "manual-required", "pipx environment has no artifact-verified lock; preserve existing installation"
+    if method == "wordlist-bundle":
+        return "wordlists", "clone missing repositories at locked commits; at least 16 GiB free required, actual download size unknown"
     if method == "brew-cask":
         return "manual-required", "GUI/Cask license and distribution conditions require review"
     return "manual-required", "manual or unsupported install method"

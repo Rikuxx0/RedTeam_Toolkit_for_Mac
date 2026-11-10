@@ -29,7 +29,7 @@ NetExec は [固定 commit の `nxc/cli.py`](https://github.com/Pennyw0rth/NetEx
 
 インストーラーの静的検証・計画・隔離fixtureテストは実装したが、現ホストへの実導入は行っていない。Homebrew Formula 46件とGo module 10件は条件付き自動導入候補で、Brew catalogの版数一致、Go module checksum、空き容量を実行時に確認する。Homebrewの推移的依存関係まで完全固定したlockはなく、依存更新の可能性を解消する必要がある。Goもmodule本体のsumを固定した段階で、全推移的moduleとtoolchainのartifact検証は未完了。Pythonの8環境はLevel 2のまま。Sliverの公式URL、Docker digest、Havocの基準revisionが未確定のため、これらは未導入ホストで自動取得できない。
 
-Git追跡外またはignore対象の重要ファイルが残るため、現リポジトリをそのままGitHubからcloneしても109項目を再現できない。追跡方針と配布可能な資産を確定し、クリーンなmacOS arm64環境で段階的に検証する必要がある。
+Git追跡外またはignore対象の重要ファイルが残るため、現リポジトリをそのままGitHubからcloneしてもManifestの全項目を再現できない。追跡方針と配布可能な資産を確定し、クリーンなmacOS arm64環境で段階的に検証する必要がある。
 
 ## 今回収集しなかったもの
 

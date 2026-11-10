@@ -23,7 +23,7 @@ METHODS = {
     "source-cross-build", "official-binary", "docker-compose",
     "docker-source", "manual-application", "manual-verified-artifact",
     "manual-go-binary", "repository-scripts", "framework", "xcode",
-    "mixed", "unknown", "optional",
+    "mixed", "unknown", "optional", "wordlist-bundle",
 }
 REQUIRED = {
     "id", "name", "category", "install_method", "source", "version",
@@ -345,3 +345,28 @@ def validate(root: Path, manifest: dict, lock: dict) -> None:
         expected_version = by_id[ident]["version"]
         if pin.get("version") not in (expected_version, "v" + expected_version):
             raise ManifestError(f"Go module version mismatch: {ident}")
+    bundle = lock.get("wordlist_bundle")
+    wordlist_tools = [tool for tool in tools if tool["install_method"] == "wordlist-bundle"]
+    if wordlist_tools:
+        if len(wordlist_tools) != 1 or wordlist_tools[0]["id"] != "wordlists" or not isinstance(bundle, dict):
+            raise ManifestError("invalid wordlist bundle definition")
+        if not isinstance(bundle.get("minimum_free_bytes"), int) or bundle["minimum_free_bytes"] < 8 * 1024**3:
+            raise ManifestError("invalid wordlist free-space reserve")
+        repositories = bundle.get("repositories")
+        if not isinstance(repositories, list) or not repositories or len(repositories) > 32:
+            raise ManifestError("invalid wordlist repository list")
+        names = set()
+        for repository in repositories:
+            if not isinstance(repository, dict) or set(repository) != {"name", "url", "revision"}:
+                raise ManifestError("invalid wordlist repository record")
+            name, url, revision = repository["name"], repository["url"], repository["revision"]
+            parsed = urlsplit(url) if isinstance(url, str) else None
+            if not isinstance(name, str) or not re.fullmatch(r"[a-z0-9][a-z0-9-]*", name) or name in names:
+                raise ManifestError("invalid wordlist destination")
+            names.add(name)
+            if not parsed or parsed.scheme != "https" or parsed.hostname != "github.com" or parsed.username or parsed.password or parsed.query or parsed.fragment or not re.fullmatch(r"/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\.git", parsed.path):
+                raise ManifestError("invalid wordlist source URL")
+            if not isinstance(revision, str) or not FULL_COMMIT.fullmatch(revision):
+                raise ManifestError("invalid wordlist revision")
+    elif bundle is not None:
+        raise ManifestError("orphaned wordlist bundle lock")

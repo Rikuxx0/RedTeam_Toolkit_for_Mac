@@ -18,7 +18,7 @@ Translated with DeepL.com (free version)
 | Type | Requirement |
 |---|---|
 | Required | macOS running natively on Apple Silicon (ARM64), Bash, and Python 3.10 or newer. Git is needed to clone the repository. |
-| Installing tools | Depending on the selection: Homebrew, Go, Git, network access, and sufficient free disk space. |
+| Installing tools | Depending on the selection: Homebrew, Go, Git, and network access. The wordlists included in standard installation require at least 16 GiB of free disk space before download. |
 | Docker-based tools | Install and start Docker Desktop, including Docker Engine and Compose, beforehand. |
 
 The public installer and manifest are in `install/`. Tools retain their official CLIs and GUIs. Installation does not automatically start C2 services or Docker containers, and the installer itself needs no extra Python packages. Docker is not required for `--help`, `--list`, or `--dry-run`.
@@ -50,8 +50,11 @@ cd RedTeam_Toolkit_for_Mac/install
 | DevSecOps | 3 | Grype, Semgrep, TruffleHog |
 | OSINT | 3 | Recon-ng, Sherlock, theHarvester |
 | Framework | 1 | Metasploit |
+| Wordlists | 1 | Wordlist Collection |
 | Runtimes and build dependencies | 13 | Docker Desktop / Compose, Python, Go, AppleClang, Node.js, Ruby, CMake, Qt 5, MinGW-w64, .NET SDK, PowerShell, uv, pipx |
 
 Check the current installation state with `./install.sh --list` or `--audit`. See the [usage guide](install/docs/installer-usage.md) (Japanese) for details.
+
+Wordlists are included in all three profiles: `minimal`, `standard`, and `full`. From `install/`, review `./install.sh --dry-run` first. The installer fetches ten Git repositories at pinned commits and never updates or overwrites an existing `wordlists/` checkout. The actual download size is unverified, so at least 16 GiB of free disk space is required before starting.
 
 **Note:** Mimikatz is not downloaded automatically or bundled with this repository because security products may detect or quarantine it, interrupting installation. If needed, obtain it manually from the [official releases](https://github.com/gentilkiwi/mimikatz/releases).

@@ -17,11 +17,14 @@
 ./install.sh --category web --dry-run
 ./install.sh --tool netexec --dry-run
 ./install.sh --tool sliver --dry-run
+./install.sh --tool wordlists --dry-run
 ```
 
-フィルターなしの通常実行は `standard`。`--tool sliver` はManifestの別名でServerとClientの2項目を選ぶ。`--category` と `--tool` は同時に使えない。依存ツールはカテゴリー外でも追加される。`--list` は109項目の現在状態を表示し、`--audit` は読み取り専用の実体検出、`--verify` はパッケージ登録・Go build metadata・Python package一覧・ローカルSHA-256などを確認する。外部対象へのスキャンやC2接続はしない。`--json` は読み取り専用モードで使える。
+フィルターなしの通常実行は `standard`。`--tool sliver` はManifestの別名でServerとClientの2項目を選ぶ。`--category` と `--tool` は同時に使えない。依存ツールはカテゴリー外でも追加される。`--list` は110項目の現在状態を表示し、`--audit` は読み取り専用の実体検出、`--verify` はパッケージ登録・Go build metadata・Python package一覧・ローカルSHA-256などを確認する。外部対象へのスキャンやC2接続はしない。`--json` は読み取り専用モードで使える。
 
-現Manifestの選択数は `minimal` 6件、`standard` 31件、`full` 109件（依存を含む）。導入方式上の条件付き自動化候補はHomebrew Formula 46件とGo module 10件で、残る53件は手動工程または固定情報不足で保留する。これらは新規Macでの導入成功数を意味しない。
+現Manifestの選択数は `minimal` 7件、`standard` 32件、`full` 110件（依存を含む）。導入方式上の条件付き自動化候補はHomebrew Formula 46件、Go module 10件、ワードリスト集合1件で、残る53件は手動工程または固定情報不足で保留する。これらは新規Macでの導入成功数を意味しない。
+
+ワードリストは `minimal`・`standard`・`full` のすべてに含む。個別に確認する場合は `--tool wordlists` または `--category wordlists` を使う。参照した[上流スクリプト](https://github.com/IonBazan/mac-pentest-tools/blob/main/install_wordlists.sh)は既存ディレクトリに`git pull`を行うため、そのまま実行・再配布せず、主要10リポジトリを`versions.lock`の固定コミットから取得する方式にした。上流スクリプトの個別ファイル取得と便宜用シンボリックリンクは含まない。既存の`wordlists/`内の別ファイルは維持し、同名の未検証ディレクトリがあれば停止する。16 GiBは事前の空き容量基準であり、実ダウンロード量の測定値ではない。サイズは未確定として追加確認を求め、実取得はテストしていない。
 
 実導入では、対象と状態、予定操作、既知の必要容量、容量不明の操作数を先に表示する。対話端末では `INSTALL` の入力が必要。容量不明の取得・ビルドは追加で `UNKNOWN` の入力が必要。非対話環境で明示する場合は `--yes --accept-unknown-size` を指定する。これらのフラグはManifestの未確定情報や不一致によるブロックを解除しない。現在のMacでの通常確認には `--dry-run` を使う。
 

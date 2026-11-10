@@ -8,8 +8,8 @@ import subprocess
 import tempfile
 import unittest
 from pathlib import Path
-from contextlib import redirect_stdout
-from unittest.mock import patch
+from contextlib import redirect_stderr, redirect_stdout
+from unittest.mock import Mock, patch
 
 from installer.backends import Backends, InstallError
 from installer.core import Detection, Detector, build_plan, capability, select
@@ -34,8 +34,8 @@ class ManifestTests(unittest.TestCase):
         cls.manifest, cls.lock = load(ROOT)
 
     def test_real_manifest_and_locks(self):
-        self.assertEqual(len(self.manifest["tools"]), 109)
-        self.assertEqual(len({t["id"] for t in self.manifest["tools"]}), 109)
+        self.assertEqual(len(self.manifest["tools"]), 110)
+        self.assertEqual(len({t["id"] for t in self.manifest["tools"]}), 110)
         self.assertEqual(set(self.lock["tools"]), {t["id"] for t in self.manifest["tools"]})
 
     def test_parser_rejects_unsafe_yaml(self):
@@ -84,15 +84,29 @@ class ManifestTests(unittest.TestCase):
         with self.assertRaisesRegex(ManifestError, "Python lock hash mismatch"):
             validate(ROOT, self.manifest, lock)
 
+    def test_wordlist_sources_must_be_fixed_and_trusted(self):
+        lock = copy.deepcopy(self.lock)
+        lock["wordlist_bundle"]["repositories"][0]["url"] = "https://example.com/wordlists.git"
+        with self.assertRaisesRegex(ManifestError, "wordlist source URL"):
+            validate(ROOT, self.manifest, lock)
+        lock = copy.deepcopy(self.lock)
+        lock["wordlist_bundle"]["repositories"][0]["revision"] = "main"
+        with self.assertRaisesRegex(ManifestError, "wordlist revision"):
+            validate(ROOT, self.manifest, lock)
+
     def test_profile_and_alias_selection(self):
         minimal = select(self.manifest, profile="minimal")
         standard = select(self.manifest, profile="standard")
         full = select(self.manifest, profile="full")
-        self.assertEqual(len(minimal), 6)
+        self.assertEqual(len(minimal), 7)
         self.assertGreater(len(standard), len(minimal))
-        self.assertEqual(len(full), 109)
+        self.assertEqual(len(full), 110)
         self.assertEqual(select(self.manifest, names=["sliver"]), ["sliver-server", "sliver-client"])
         self.assertEqual(len(select(self.manifest, categories=["c2"])), 10)  # C2 plus runtime dependencies
+        self.assertEqual(select(self.manifest, names=["wordlists"]), ["wordlists"])
+        self.assertIn("wordlists", minimal)
+        self.assertIn("wordlists", standard)
+        self.assertFalse(next(t for t in self.manifest["tools"] if t["id"] == "wordlists")["optional"])
         with self.assertRaises(ManifestError):
             select(self.manifest, names=["unknown-tool"])
 
@@ -167,7 +181,45 @@ class DetectionAndPlanTests(unittest.TestCase):
             counts[backend] = counts.get(backend, 0) + 1
         self.assertEqual(counts["brew"], 46)
         self.assertEqual(counts["go"], 10)
+        self.assertEqual(counts["wordlists"], 1)
         self.assertEqual(counts["manual-required"], 53)
+
+    def test_wordlists_plan_requires_unknown_size_confirmation(self):
+        ids = select(self.manifest, names=["wordlists"])
+        plan = build_plan(ROOT, self.manifest, self.lock, ids, FixedDetector({}))
+        self.assertEqual(plan[0].action, "wordlists")
+        self.assertIsNone(plan[0].estimated_bytes)
+        self.assertEqual(self.lock["wordlist_bundle"]["minimum_free_bytes"], 16 * 1024**3)
+
+    def test_cli_wordlists_dry_run_shows_pinned_sources(self):
+        output = io.StringIO()
+        with patch("installer.core.host_compatible", return_value=True), patch("installer.main.Backends", side_effect=AssertionError("backend was invoked")):
+            with redirect_stdout(output):
+                code = main(["--dry-run", "--tool", "wordlists", "--json"], ROOT)
+        self.assertEqual(code, 0)
+        row = json.loads(output.getvalue())["items"][0]
+        self.assertEqual(row["action"], "wordlists")
+        self.assertEqual(len(row["repositories"]), 10)
+
+    def test_unverified_existing_wordlist_is_blocked(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "install"
+            source.mkdir()
+            existing = Path(directory) / "wordlists/seclists"
+            existing.mkdir(parents=True)
+            (existing / "local.txt").write_text("keep me")
+            with patch("installer.core.host_compatible", return_value=True):
+                detector = Detector(source, self.manifest, self.lock, which=lambda _: "/usr/bin/git")
+                result = detector.detect(self.by_id["wordlists"])
+            self.assertEqual(result.state, "incompatible")
+            self.assertEqual((existing / "local.txt").read_text(), "keep me")
+
+    def test_wordlists_capacity_blocks_before_backend(self):
+        output = io.StringIO()
+        with patch("installer.core.host_compatible", return_value=True), patch("installer.main.host_compatible", return_value=True), patch("installer.main.shutil.disk_usage", return_value=Mock(free=1 * 1024**3)), patch("installer.main.Backends", side_effect=AssertionError("backend was invoked")):
+            with redirect_stdout(output), redirect_stderr(io.StringIO()):
+                code = main(["--tool", "wordlists", "--yes", "--accept-unknown-size"], ROOT)
+        self.assertEqual(code, 3)
 
     def test_cli_dry_run_is_read_only(self):
         output = io.StringIO()
@@ -293,6 +345,52 @@ class BackendTests(unittest.TestCase):
         with self.assertRaises(InstallError) as caught:
             Backends(ROOT, self.manifest, self.lock, runner=runner)._brew(self.by_id["nmap"])
         self.assertEqual(caught.exception.result, "failed")
+
+    def test_wordlist_backend_uses_pinned_git_without_pull(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "install"
+            source.mkdir()
+            lock = copy.deepcopy(self.lock)
+            lock["wordlist_bundle"]["repositories"] = lock["wordlist_bundle"]["repositories"][:1]
+            revision = lock["wordlist_bundle"]["repositories"][0]["revision"]
+            seen = []
+            def runner(args, **kwargs):
+                seen.append(args)
+                if args[:2] == ["git", "clone"]:
+                    checkout = Path(args[-1])
+                    checkout.mkdir()
+                    (checkout / ".git").mkdir()
+                    (checkout / "sample.txt").write_text("fixture")
+                return subprocess.CompletedProcess(args, 0, revision + "\n" if "rev-parse" in args else "", "")
+            with patch("installer.core.host_compatible", return_value=True), patch("installer.backends.shutil.disk_usage", return_value=Mock(free=20 * 1024**3)):
+                result = Backends(source, self.manifest, lock, runner=runner)._wordlists(self.by_id["wordlists"])
+            self.assertEqual(result.result, "success")
+            self.assertEqual((Path(directory) / "wordlists/seclists/sample.txt").read_text(), "fixture")
+            self.assertTrue(any("fetch" in args and revision in args for args in seen))
+            self.assertFalse(any("pull" in args for args in seen))
+
+    def test_wordlist_backend_local_checkout_is_idempotent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            upstream = root / "upstream"
+            upstream.mkdir()
+            for args in (["git", "init", "-q", str(upstream)], ["git", "-C", str(upstream), "config", "user.name", "Fixture"], ["git", "-C", str(upstream), "config", "user.email", "fixture@example.invalid"]):
+                subprocess.run(args, check=True, capture_output=True)
+            (upstream / "sample.txt").write_text("fixture")
+            subprocess.run(["git", "-C", str(upstream), "add", "sample.txt"], check=True, capture_output=True)
+            subprocess.run(["git", "-C", str(upstream), "commit", "-qm", "fixture"], check=True, capture_output=True)
+            revision = subprocess.check_output(["git", "-C", str(upstream), "rev-parse", "HEAD"], text=True).strip()
+            source = root / "install"
+            source.mkdir()
+            lock = copy.deepcopy(self.lock)
+            lock["wordlist_bundle"]["repositories"] = [{"name": "seclists", "url": str(upstream), "revision": revision}]
+            tool = self.by_id["wordlists"]
+            plan = build_plan(source, self.manifest, lock, ["wordlists"], FixedDetector({}))[0]
+            with patch("installer.core.host_compatible", return_value=True), patch("installer.backends.shutil.disk_usage", return_value=Mock(free=20 * 1024**3)):
+                backend = Backends(source, self.manifest, lock)
+                self.assertEqual(backend.execute(plan, tool).result, "success")
+                self.assertEqual(backend.execute(plan, tool).result, "skipped")
+            self.assertEqual((root / "wordlists/seclists/sample.txt").read_text(), "fixture")
 
     def test_netexec_patch_applies_only_to_fixture(self):
         patch_file = ROOT / "patches/netexec/version-exit-code.patch"
