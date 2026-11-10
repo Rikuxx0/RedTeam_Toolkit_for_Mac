@@ -36,22 +36,22 @@ cd RedTeam_Toolkit_for_Mac/install
 
 ## ペネトレーションテスト・レッドチームツール一覧
 
-| 分野 | 件数 | ツール |
-|---|---:|---|
-| C2 | 4 | Sliver Server、Sliver Client、Havoc Teamserver / GUI、Empire / Starkiller |
-| Active Directory | 9 | NetExec、Certipy-AD、BloodHound CE、bloodhound-ce-python、Kerbrute、Impacket、dploot、pypykatz、Responder |
-| Windows専用 | 2 | Rubeus、Mimikatz |
-| クラウド・Kubernetes | 17 | AWS CLI、Azure CLI、Google Cloud CLI、AzureHound、Graphpython、GraphRunner、ROADtx、ROADrecon、Principal Mapper、GCP-Hound、GCP Scanner、kubectl、KubeHound、kind、IAMhounddog、aws-enumerator、GoAWSConsoleSpray |
-| ネットワーク | 14 | Nmap、Masscan、Aircrack-ng、Bettercap、RustScan、Hydra、tcpdump、dnsmap、sslscan、testssl、mitmproxy、Scapy、ProxyChains-NG、socat |
-| Web | 20 | Nuclei、ffuf、feroxbuster、Gobuster、sqlmap、WPScan、Amass、Subfinder、dirsearch、git-dumper、hakrawler、gauplus、waybackurls、subzy、github-subdomains、Web Exploit Scripts、wafw00f、DNSRecon、dnstwist、gf |
-| フォレンジック・解析 | 12 | stego-toolkit、Binwalk、ExifTool、Foremost、Volatility 3、angr、YARA、radare2、JADX、osquery、oletools、Frida tools |
-| GUI | 7 | Wireshark、Burp Suite、IDA Free、Binary Ninja Free、Cutter、Maltego、ZAP |
-| 認証監査 | 4 | Hashcat、John the Ripper Jumbo、Medusa、Crunch |
-| DevSecOps | 3 | Grype、Semgrep、TruffleHog |
-| OSINT | 3 | Recon-ng、Sherlock、theHarvester |
-| フレームワーク | 1 | Metasploit |
-| ワードリスト | 1 | Wordlist Collection |
-| 実行基盤・開発依存 | 13 | Docker Desktop / Compose、Python、Go、AppleClang、Node.js、Ruby、CMake、Qt 5、MinGW-w64、.NET SDK、PowerShell、uv、pipx |
+| 分野 | ツール |
+|---|---|
+| C2 | Sliver Server、Sliver Client、Havoc Teamserver / GUI、Empire / Starkiller |
+| Active Directory | NetExec、Certipy-AD、BloodHound CE、bloodhound-ce-python、Kerbrute、Impacket、dploot、pypykatz、Responder |
+| Windows専用 | Rubeus、Mimikatz |
+| クラウド・Kubernetes | AWS CLI、Azure CLI、Google Cloud CLI、AzureHound、Graphpython、GraphRunner、ROADtx、ROADrecon、Principal Mapper、GCP-Hound、GCP Scanner、kubectl、KubeHound、kind、IAMhounddog、aws-enumerator、GoAWSConsoleSpray |
+| ネットワーク | Nmap、Masscan、Aircrack-ng、Bettercap、RustScan、Hydra、tcpdump、dnsmap、sslscan、testssl、mitmproxy、Scapy、ProxyChains-NG、socat |
+| Web | Nuclei、ffuf、feroxbuster、Gobuster、sqlmap、WPScan、Amass、Subfinder、dirsearch、git-dumper、hakrawler、gauplus、waybackurls、subzy、github-subdomains、Web Exploit Scripts、wafw00f、DNSRecon、dnstwist、gf |
+| フォレンジック・解析 | stego-toolkit、Binwalk、ExifTool、Foremost、Volatility 3、angr、YARA、radare2、JADX、osquery、oletools、Frida tools |
+| GUI | Wireshark、Burp Suite、IDA Free、Binary Ninja Free、Cutter、Maltego、ZAP |
+| 認証監査 | Hashcat、John the Ripper Jumbo、Medusa、Crunch |
+| DevSecOps | Grype、Semgrep、TruffleHog |
+| OSINT | Recon-ng、Sherlock、theHarvester |
+| フレームワーク | Metasploit |
+| ワードリスト | Wordlist Collection |
+| 実行基盤・開発依存 | Docker Desktop / Compose、Python、Go、AppleClang、Node.js、Ruby、CMake、Qt 5、MinGW-w64、.NET SDK、PowerShell、uv、pipx |
 
 また、導入状態は `./install.sh --list` または `--audit` で確認できます。詳細は[使用方法](install/docs/installer-usage.md)を参照してください。
 
