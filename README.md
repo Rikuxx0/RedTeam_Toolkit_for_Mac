@@ -1,4 +1,4 @@
-# RedTeam Toolkit for MacOS
+# Red Team Toolkit for MacOS
 
 [日本語](README.md) / [English](README.en.md)
 
