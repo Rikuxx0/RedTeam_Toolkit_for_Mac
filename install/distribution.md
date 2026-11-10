@@ -1,9 +1,9 @@
-# 配布構成
+# Intaller Guide
 
-GitHubのルートREADMEから`install/`へ進む。インストーラー本体、Manifest、8個のPythonロック、公開可能な最小パッチ・スナップショット、テスト、文書、Empire Composeと値を含まない設定例を`install/`に置く。GitHub Actionsの有効なworkflowだけはルート`.github/workflows/`に置く。Git indexの一覧は`publication-files.txt`を正本とする。
+インストーラー本体、Manifest、8個のPythonロック、公開可能な最小パッチ・スナップショット、テスト、文書、Empire Composeと値を含まない設定例を`install/`に置く。GitHub Actionsの有効なworkflowだけはルート`.github/workflows/`に置く。Git indexの一覧は`publication-files.txt`を正本とする。
 
 ```sh
-git clone <repository-url>
+git clone https://github.com/Rikuxx0/RedTeam_Toolkit_for_Mac.git
 cd RedTeam_Toolkit_for_Mac/install
 ./install.sh --help
 ./install.sh --list
