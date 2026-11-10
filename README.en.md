@@ -1,6 +1,6 @@
 # RedTeam_Toolkit_for_Mac
 
-[Japanese](README.md) | [English](README.en.md)
+[Japanese](README.md) / [English](README.en.md)
 
 This is a toolkit designed for red team exercises and penetration testing on macOS systems equipped with Apple Silicon. It is intended for use on bare-metal systems; if you typically use macOS and find it difficult to set up a virtual environment such as Kali Linux, running this installer allows you to set up a minimal environment for manual penetration testing and red team exercises. Additionally, you can use your own penetration testing tools, OSINT tools, and red team tools in conjunction with this toolkit as needed.
 
